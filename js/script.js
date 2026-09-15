@@ -279,28 +279,43 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  /* ---------- FAQ Skill Bars (animated fill on scroll into view) ---------- */
+  /* ---------- FAQ Skill Rings (animated fill + count-up on scroll into view) ---------- */
   var faqSkills = document.querySelector('.faq__skills');
   if (faqSkills) {
-    var fillSkillBars = function () {
-      faqSkills.querySelectorAll('.faq__skill-bar').forEach(function (bar) {
-        var pct = bar.getAttribute('data-percent') || 0;
-        bar.querySelector('span').style.width = pct + '%';
-        bar.classList.add('is-filled');
+    var fillSkillRings = function () {
+      faqSkills.querySelectorAll('.faq__skill-ring-fill').forEach(function (ring) {
+        var pct = parseFloat(ring.getAttribute('data-percent')) || 0;
+        var circumference = 2 * Math.PI * parseFloat(ring.getAttribute('r'));
+        ring.style.strokeDasharray = circumference;
+        ring.style.strokeDashoffset = circumference * (1 - pct / 100);
+      });
+      faqSkills.querySelectorAll('.faq__skill-num').forEach(function (numEl) {
+        var target = parseInt(numEl.getAttribute('data-count'), 10);
+        var current = 0;
+        var increment = Math.max(target / 50, 1);
+        var timer = setInterval(function () {
+          current += increment;
+          if (current >= target) {
+            numEl.textContent = target;
+            clearInterval(timer);
+          } else {
+            numEl.textContent = Math.floor(current);
+          }
+        }, 25);
       });
     };
     if ('IntersectionObserver' in window) {
       var faqSkillsObserver = new IntersectionObserver(function (entries) {
         entries.forEach(function (entry) {
           if (entry.isIntersecting) {
-            fillSkillBars();
+            fillSkillRings();
             faqSkillsObserver.disconnect();
           }
         });
       }, { threshold: 0.3 });
       faqSkillsObserver.observe(faqSkills);
     } else {
-      fillSkillBars();
+      fillSkillRings();
     }
   }
 
