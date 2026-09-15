@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <script>
+(function () {
+  try {
+    var stored = localStorage.getItem('digierapro-theme');
+    var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+  } catch (e) {}
+})();
+  </script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog - DIGI ERA PRO LLC</title>
+<meta name="description" content="Resource: SEO, Google Ads, web design, and local marketing insights from the Digi Era Pro team.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="topbar">
+  <div class="container topbar__inner">
+    <div class="topbar__left">
+      <span><i class="fa-regular fa-clock"></i> 9:00 AM – 5:00 PM EST</span>
+      <span><i class="fa-solid fa-envelope"></i> info@digierapro.com</span>
+    </div>
+    <div class="topbar__right">
+      <span class="topbar__badges">Partner With: Google Partners &middot; Meta Business Partner &middot; Trustpilot</span>
+      <a href="tel:17866001595"><i class="fa-solid fa-phone"></i> (786) 600-1595</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="index.html" class="header__logo">
+      <img src="assets/images/logo-wordmark.png" alt="Digi Era Pro LLC">
+    </a>
+    <nav class="nav" id="nav">
+      <ul class="nav__list">
+        <li><a href="index.html">Home</a></li>
+        <li class="has-dropdown">
+          <a href="services.html">Services <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="google-my-business-optimization.html">GBP Optimization</a></li>
+            <li><a href="landing-page-website.html">Landing Page Website</a></li>
+            <li><a href="web-development.html">Web Development</a></li>
+            <li><a href="search-engine-optimization.html">Search Engine Optimization</a></li>
+            <li><a href="social-media-marketing.html">Social Media Marketing</a></li>
+            <li><a href="google-ads.html">Google Ads</a></li>
+            <li><a href="citations.html">Citations &amp; Backlinks</a></li>
+            <li><a href="branding.html">Branding</a></li>
+            <li><a href="graphic-designing.html">Graphic Designing</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="amazon.html">Amazon</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="apps.html">Apps</a></li>
+            <li><a href="ecommerce.html">Ecommerce</a></li>
+            <li><a href="software.html">Software</a></li>
+            <li><a href="virtual-ai-solutions.html">Virtual AI Solution</a></li>
+          </ul>
+        </li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="google-my-business-optimization.html">Special Offer</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header__actions">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+        <i class="fa-solid fa-sun theme-toggle__icon theme-toggle__icon--sun"></i>
+        <i class="fa-solid fa-moon theme-toggle__icon theme-toggle__icon--moon"></i>
+      </button>
+      <a href="contact.html" class="btn btn--primary">Contact With Us</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="nav-overlay" id="navOverlay"></div>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Resource</span>
+      <h1>Resource</h1>
+      <p class="page-hero__lead">Insights, tips, and updates from the Digi Era Pro team on SEO, Google Ads, web design, and local marketing.</p>
+      <div class="breadcrumb"><a href="index.html">Home</a> <i class="fa-solid fa-chevron-right"></i> <span>Blog</span></div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="blog__grid">
+        <article class="blog-card">
+          <div class="blog-card__thumb"><img src="assets/images/stock/1551288049-bebda4e38f71-w500.jpg" alt="Google Ads dashboard" loading="lazy"></div>
+          <div class="blog-card__body">
+            <span class="blog-card__meta">Google Ads</span>
+            <h3>Google Ads Services New York</h3>
+            <a href="#" class="blog-card__link">Read More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-card__thumb"><img src="assets/images/stock/1533750349088-cd871a92f312-w500.jpg" alt="Marketing strategy planning" loading="lazy"></div>
+          <div class="blog-card__body">
+            <span class="blog-card__meta">Google Ads</span>
+            <h3>Local Google Ads Expert in New York</h3>
+            <a href="#" class="blog-card__link">Read More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-card__thumb"><img src="assets/images/stock/1571677246347-5040036b95cc-w500.jpg" alt="Ad campaign performance dashboard" loading="lazy"></div>
+          <div class="blog-card__body">
+            <span class="blog-card__meta">Google Ads</span>
+            <h3>Google Ads Specialist New York</h3>
+            <a href="#" class="blog-card__link">Read More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-card__thumb"><img src="assets/images/stock/1460925895917-afdab827c52f-w500.jpg" alt="SEO analytics on laptop" loading="lazy"></div>
+          <div class="blog-card__body">
+            <span class="blog-card__meta">SEO</span>
+            <h3>SEO Companies Near Me: Questions to Ask Before Hiring</h3>
+            <a href="#" class="blog-card__link">Read More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-card__thumb"><img src="assets/images/stock/1504384308090-c894fdcc538d-w500.jpg" alt="Advertising agency office" loading="lazy"></div>
+          <div class="blog-card__body">
+            <span class="blog-card__meta">Local Marketing</span>
+            <h3>How to Choose the Best Advertising Agency in Newburgh, NY</h3>
+            <a href="#" class="blog-card__link">Read More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-card__thumb"><img src="assets/images/stock/1517245386807-bb43f82c33c4-w500.jpg" alt="Website code on screen" loading="lazy"></div>
+          <div class="blog-card__body">
+            <span class="blog-card__meta">Web Design</span>
+            <h3>Web Design – New York. NYC's Top-Rated Website Designer</h3>
+            <a href="#" class="blog-card__link">Read More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-card__thumb"><img src="assets/images/stock/1553877522-43269d4ea984-w500.jpg" alt="Marketing team discussion" loading="lazy"></div>
+          <div class="blog-card__body">
+            <span class="blog-card__meta">Digital Marketing</span>
+            <h3>Digital Marketing Agency Newburgh NY</h3>
+            <a href="#" class="blog-card__link">Read More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-card__thumb"><img src="assets/images/stock/1551288049-bebda4e38f71-w500.jpg" alt="Google Partner ads performance" loading="lazy"></div>
+          <div class="blog-card__body">
+            <span class="blog-card__meta">Google Ads</span>
+            <h3>Reliable Google Ads Partner New York</h3>
+            <a href="#" class="blog-card__link">Read More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-card__thumb"><img src="assets/images/stock/1547658719-da2b51169166-w500.jpg" alt="Website development setup" loading="lazy"></div>
+          <div class="blog-card__body">
+            <span class="blog-card__meta">Web Design</span>
+            <h3>Find the Right Website Developers in Newburgh, NY</h3>
+            <a href="#" class="blog-card__link">Read More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+      </div>
+      <div style="text-align:center; margin-top:48px;">
+        <a href="#" class="btn btn--ghost">Load More</a>
+      </div>
+    </div>
+  </section>
+  <section class="cta-banner">
+    <div class="container cta-banner__inner">
+      <h2>Want marketing insights delivered straight to your business strategy? Let's talk.</h2>
+      <a href="contact.html" class="btn btn--white btn--lg">Contact With Us <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <img src="assets/images/logo-full.png" alt="Digi Era Pro LLC" class="footer__logo">
+      <p>Your partner in building a strong online presence with creative, results-focused marketing!</p>
+      <div class="footer__social">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+
+    <div class="footer__col">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4>Contact</h4>
+      <ul class="footer__contact">
+        <li><i class="fa-solid fa-phone"></i><div><strong>General Inquiries</strong><a href="tel:17866001595">(786) 600-1595</a></div></li>
+        <li><i class="fa-solid fa-headset"></i><div><strong>Sales Department</strong><a href="tel:18325217343">(832) 521-7343</a></div></li>
+        <li><i class="fa-solid fa-envelope"></i><div><strong>Email Us</strong><a href="mailto:info@digierapro.com">info@digierapro.com</a></div></li>
+      </ul>
+    </div>
+
+    <div class="footer__col footer__whatsapp">
+      <h4>Follow Our Channel</h4>
+      <p>For the latest updates and news, join our WhatsApp channel.</p>
+      <a href="https://www.whatsapp.com/channel/0029Va9rAuz35fLvhz6FN80z" class="btn btn--primary btn--sm"><i class="fa-brands fa-whatsapp"></i> Join Channel</a>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="container footer__bottom-inner">
+      <span>©2021. All rights reserved by Digi Era Pro LLC</span>
+      <a href="terms-conditions.html">Terms &amp; Conditions</a>
+    </div>
+  </div>
+</footer>
+
+<a href="tel:17866001595" class="mobile-call-fab" aria-label="Call us"><i class="fa-solid fa-phone"></i></a>
+
+<script src="js/script.js"></script>
+</body>
+</html>

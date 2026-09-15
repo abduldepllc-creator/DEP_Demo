@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <script>
+(function () {
+  try {
+    var stored = localStorage.getItem('digierapro-theme');
+    var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+  } catch (e) {}
+})();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Marketing Agency in New York, NY - DIGI ERA PRO LLC</title>
+  <meta name="description"
+    content="Digi Era Pro LLC is a digital marketing agency offering Web Development, SEO, Google My Business Optimization, and PPC campaigns to help your business grow.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Top Bar -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__left">
+        <span><i class="fa-regular fa-clock"></i> 9:00 AM – 5:00 PM EST</span>
+        <span><i class="fa-solid fa-envelope"></i> info@digierapro.com</span>
+      </div>
+      <div class="topbar__right">
+        <span class="topbar__badges">Partner With: Google Partners &middot; Meta Business Partner &middot;
+          Trustpilot</span>
+        <a href="tel:17866001595"><i class="fa-solid fa-phone"></i> (786) 600-1595</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <img src="assets/images/logo-wordmark.png" alt="Digi Era Pro LLC">
+      </a>
+
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li class="has-dropdown">
+            <a href="services.html">Services <i class="fa-solid fa-chevron-down"></i></a>
+            <ul class="dropdown">
+              <li><a href="google-my-business-optimization.html">GBP Optimization</a></li>
+              <li><a href="landing-page-website.html">Landing Page Website</a></li>
+              <li><a href="web-development.html">Web Development</a></li>
+              <li><a href="search-engine-optimization.html">Search Engine Optimization</a></li>
+              <li><a href="social-media-marketing.html">Social Media Marketing</a></li>
+              <li><a href="google-ads.html">Google Ads</a></li>
+              <li><a href="citations.html">Citations &amp; Backlinks</a></li>
+              <li><a href="branding.html">Branding</a></li>
+              <li><a href="graphic-designing.html">Graphic Designing</a></li>
+              <li><a href="reviews.html">Reviews</a></li>
+              <li><a href="amazon.html">Amazon</a></li>
+              <li><a href="games.html">Games</a></li>
+              <li><a href="apps.html">Apps</a></li>
+              <li><a href="ecommerce.html">Ecommerce</a></li>
+              <li><a href="software.html">Software</a></li>
+              <li><a href="virtual-ai-solutions.html">Virtual AI Solution</a></li>
+            </ul>
+          </li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="google-my-business-optimization.html">Special Offer</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+        <i class="fa-solid fa-sun theme-toggle__icon theme-toggle__icon--sun"></i>
+        <i class="fa-solid fa-moon theme-toggle__icon theme-toggle__icon--moon"></i>
+      </button>
+        <a href="contact.html" class="btn btn--primary">Contact With Us</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <main>
+
+    <!-- Hero Slider (scroll-driven presentation) -->
+    <section class="hero-slider" id="heroSlider">
+      <div class="hero-slider__glow"></div>
+      <div class="hero-slider__glow hero-slider__glow--2"></div>
+
+      <div class="hero-slider__dots" aria-label="Slide navigation">
+        <button class="hero-dot is-active" data-slide="0" aria-label="Slide 1"></button>
+        <button class="hero-dot" data-slide="1" aria-label="Slide 2"></button>
+        <button class="hero-dot" data-slide="2" aria-label="Slide 3"></button>
+        <button class="hero-dot" data-slide="3" aria-label="Slide 4"></button>
+      </div>
+
+      <div class="hero-slider__social">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+
+      <div class="hero-slider__scroll-hint" id="heroScrollHint">
+        <span>Scroll</span>
+        <div class="hero-slider__scroll-line"><i></i></div>
+      </div>
+
+      <div class="hero-slider__counter">
+        <span class="hero-slider__counter-current">01</span>
+        <span class="hero-slider__counter-bar"><i style="--w:25%"></i></span>
+        <span class="hero-slider__counter-total">04</span>
+      </div>
+
+      <div class="hero-slider__track">
+
+        <!-- Slide 1 — Cover -->
+        <div class="hero-slide is-active" data-index="0">
+          <div class="container hero-slide__inner">
+            <div class="hero-slide__content">
+              <span class="hero-slide__eyebrow">Digital Marketing Agency &middot; New York, NY</span>
+              <h2 class="hero-slide__title"><span class="tt-solid">Revolutionizing</span><span
+                  class="tt-outline">Business</span></h2>
+              <p class="hero-slide__text">We Bring Customers to Your Doorstep. Digi Era Pro provides personalized
+                solutions — from web development to SEO, GMB optimization, and lead-generating PPC campaigns. Whatever
+                stage your business is at, we build the strategy to get you found, get you chosen, and keep you
+                growing.</p>
+              <div class="hero-slide__tags">
+                <span>Web Design</span>
+                <span>SEO</span>
+                <span>GMB Optimization</span>
+                <span>Paid Ads</span>
+              </div>
+              <div class="hero-slide__cta">
+                <a href="contact.html" class="btn btn--primary btn--lg">Discover More <i
+                    class="fa-solid fa-arrow-right"></i></a>
+                <a href="tel:17866001595" class="btn btn--ghost-dark btn--lg"><i class="fa-solid fa-phone"></i> (786)
+                  600-1595</a>
+              </div>
+            </div>
+            <div class="hero-slide__visual hero-slide__visual--corner">
+              <div class="hero-slide__blob"></div>
+              <div class="hero-slide__photo">
+                <img src="assets/images/stock/1551434678-e076c223a692-w900.jpg"
+                  alt="Digi Era Pro team reviewing marketing performance dashboards" loading="eager">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 — Client Industries (fresh, not shown elsewhere on the page) -->
+        <div class="hero-slide" data-index="1"
+          style="background-image:url('assets/images/stock/1504384308090-c894fdcc538d-w1600.jpg');">
+          <div class="hero-slide__scrim"></div>
+          <div class="container hero-slide__inner">
+            <div class="hero-slide__content">
+              <span class="hero-slide__eyebrow">Who We Work With</span>
+              <h2 class="hero-slide__title"><span class="tt-solid">Client</span><span
+                  class="tt-outline">Industries</span></h2>
+              <p class="hero-slide__text">From home services to healthcare, we've built data-backed strategies for
+                businesses across a wide range of industries. No cookie-cutter templates — every engagement starts with
+                research into how your specific customers search, compare, and decide before they ever pick up the
+                phone.</p>
+            </div>
+            <div class="hero-slide__chart-area">
+              <div class="bar-chart-large">
+                <div class="bar-chart-large__col"><span class="bar-chart-large__value">32%</span>
+                  <div class="bar-chart-large__bar" style="--h:32%"></div><span>Home Services</span>
+                </div>
+                <div class="bar-chart-large__col"><span class="bar-chart-large__value">24%</span>
+                  <div class="bar-chart-large__bar" style="--h:24%"></div><span>Automotive</span>
+                </div>
+                <div class="bar-chart-large__col"><span class="bar-chart-large__value">18%</span>
+                  <div class="bar-chart-large__bar" style="--h:18%"></div><span>Legal</span>
+                </div>
+                <div class="bar-chart-large__col"><span class="bar-chart-large__value">15%</span>
+                  <div class="bar-chart-large__bar" style="--h:15%"></div><span>Retail</span>
+                </div>
+                <div class="bar-chart-large__col"><span class="bar-chart-large__value">11%</span>
+                  <div class="bar-chart-large__bar" style="--h:11%"></div><span>Healthcare</span>
+                </div>
+              </div>
+              <p class="hero-slide__chart-note">Share of active client accounts by industry vertical, based on our
+                current portfolio.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 — Average Client Results (fresh) -->
+        <div class="hero-slide" data-index="2"
+          style="background-image:url('assets/images/stock/1571677246347-5040036b95cc-w1600.jpg');">
+          <div class="hero-slide__scrim hero-slide__scrim--right"></div>
+          <div class="container hero-slide__inner hero-slide__inner--chart">
+            <div class="hero-slide__chart-area">
+              <div class="hero-slide__blob hero-slide__blob--sm"></div>
+              <svg viewBox="0 0 400 220" class="growth-chart-svg" preserveAspectRatio="none">
+                <defs>
+                  <linearGradient id="growthFill" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#C8367C" stop-opacity="0.55" />
+                    <stop offset="100%" stop-color="#C8367C" stop-opacity="0" />
+                  </linearGradient>
+                </defs>
+                <g class="growth-grid">
+                  <line x1="0" y1="14" x2="400" y2="14" />
+                  <line x1="0" y1="64" x2="400" y2="64" />
+                  <line x1="0" y1="114" x2="400" y2="114" />
+                  <line x1="0" y1="164" x2="400" y2="164" />
+                </g>
+                <polyline class="growth-fill"
+                  points="0,175 55,168 110,150 165,142 220,110 275,90 330,55 400,20 400,220 0,220" />
+                <polyline class="growth-line" points="0,175 55,168 110,150 165,142 220,110 275,90 330,55 400,20" />
+                <circle class="growth-dot" cx="400" cy="20" r="5" />
+              </svg>
+              <div class="growth-chart-labels">
+                <span>Month
+                  1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>9</span><span>12</span>
+              </div>
+            </div>
+            <div class="hero-slide__content">
+              <span class="hero-slide__eyebrow">Performance</span>
+              <h2 class="hero-slide__title"><span class="tt-solid">Average</span><span class="tt-outline">Results</span>
+              </h2>
+              <p class="hero-slide__text">A typical client sees steady, compounding growth in local search visibility
+                and website traffic within the first 6-12 months of working with us — and it doesn't stop there. Our
+                team monitors rankings, ad spend, and conversion data weekly, adjusting the strategy so results keep
+                climbing well beyond the first year.</p>
+              <div class="hero-stats-grid hero-stats-grid--inline">
+                <div class="hero-stat"><strong data-count="156">0</strong><span>% Local Visibility</span></div>
+                <div class="hero-stat"><strong data-count="89">0</strong><span>% Website Traffic</span></div>
+                <div class="hero-stat"><strong data-count="3">0</strong><span>x Lead Volume</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4 — How We Work (process, fresh, closes with CTA) -->
+        <div class="hero-slide" data-index="3"
+          style="background-image:url('assets/images/stock/1553877522-43269d4ea984-w1600.jpg');">
+          <div class="hero-slide__scrim"></div>
+          <div class="container hero-slide__inner hero-slide__inner--stats">
+            <div class="hero-slide__content hero-slide__content--center">
+              <span class="hero-slide__eyebrow">Our Commitment To You</span>
+              <h2 class="hero-slide__title"><span class="tt-solid">What You</span><span class="tt-outline">Actually
+                  Get</span></h2>
+              <p class="hero-slide__text">No vague promises — just a straightforward partnership built around real
+                access, real accountability, and real people who pick up the phone.</p>
+              <div class="hero-process-grid">
+                <div class="hero-process-step"><span class="hero-process-step__num">01</span>
+                  <h3>No Long-Term Contracts</h3>
+                  <p>You stay with us because it's working — not because you're locked into fine print.</p>
+                </div>
+                <div class="hero-process-step"><span class="hero-process-step__num">02</span>
+                  <h3>One Dedicated Strategist</h3>
+                  <p>A single point of contact who knows your business inside out — never a rotating cast of account
+                    managers.</p>
+                </div>
+                <div class="hero-process-step"><span class="hero-process-step__num">03</span>
+                  <h3>Full Reporting Access</h3>
+                  <p>Live dashboards and clear monthly reports, so you always know exactly what's happening and why.</p>
+                </div>
+                <div class="hero-process-step"><span class="hero-process-step__num">04</span>
+                  <h3>Fast, Real Support</h3>
+                  <p>Questions answered by an actual human, usually within hours — never stuck in an automated ticket
+                    queue.</p>
+                </div>
+              </div>
+              <a href="contact.html" class="btn btn--primary btn--lg">Get Your Free Strategy Call <i
+                  class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Trust badges -->
+    <section class="trust-strip">
+      <div class="trust-strip__inner">
+        <span class="trust-strip__label">Trusted &amp; Certified By</span>
+        <div class="trust-strip__marquee">
+          <div class="trust-strip__logos">
+            <span><i class="fa-brands fa-google"></i> Google Partners</span>
+            <span><i class="fa-brands fa-meta"></i> Meta Business Partner</span>
+            <span><i class="fa-solid fa-star"></i> Trustpilot</span>
+            <span><i class="fa-solid fa-lock"></i> PositiveSSL</span>
+            <span><i class="fa-solid fa-award"></i> BES Featured</span>
+            <span><i class="fa-brands fa-google"></i> Google Partners</span>
+            <span><i class="fa-brands fa-meta"></i> Meta Business Partner</span>
+            <span><i class="fa-solid fa-star"></i> Trustpilot</span>
+            <span><i class="fa-solid fa-lock"></i> PositiveSSL</span>
+            <span><i class="fa-solid fa-award"></i> BES Featured</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Services -->
+    <section class="section services" id="services">
+      <div class="services__ring" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">What We Do</span>
+          <h2>Our Key Services</h2>
+          <p>Digi Era Pro is a digital marketing agency that provides personalized solutions to make your business stand
+            out. We offer various services to help your business grow and achieve targeted goals. We've got everything
+            you need to help your business succeed.</p>
+        </div>
+
+        <div class="services__grid">
+          <article class="service-card">
+            <span class="service-card__num">01</span>
+            <div class="service-card__icon"><i class="fa-solid fa-code"></i></div>
+            <h3>Web Development</h3>
+            <p>Want to make your business successful? Let's start by creating a website that makes a real impact. Our
+              web development services are all about creating custom, user-friendly sites that look great and perform
+              even better. We don't just build websites—we optimize them with SEO and digital marketing strategies that
+              help you reach the right people and grow your business.</p>
+            <ul class="service-card__list">
+              <li><i class="fa-solid fa-check"></i> WordPress Web Development</li>
+              <li><i class="fa-solid fa-check"></i> Custom Websites</li>
+              <li><i class="fa-solid fa-check"></i> PHP Website</li>
+              <li><i class="fa-solid fa-check"></i> E-Commerce Websites</li>
+            </ul>
+            <a href="web-development.html" class="service-card__link">Learn More <i
+                class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <article class="service-card service-card--dark">
+            <span class="service-card__num">02</span>
+            <div class="service-card__icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+            <h3>Search Engine Optimization</h3>
+            <p>Want to get your website noticed and attract more visitors? Our SEO services are here to help! We focus
+              on making your site more visible to search engines, starting with keyword research and optimizing your
+              content, link-building, and technical SEO.</p>
+            <ul class="service-card__list">
+              <li><i class="fa-solid fa-check"></i> On-Page SEO</li>
+              <li><i class="fa-solid fa-check"></i> Off-Page &amp; Technical SEO</li>
+              <li><i class="fa-solid fa-check"></i> Quality Backlinks</li>
+              <li><i class="fa-solid fa-check"></i> SEO Audits</li>
+            </ul>
+            <a href="search-engine-optimization.html" class="service-card__link">Learn More <i
+                class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <article class="service-card">
+            <span class="service-card__num">03</span>
+            <div class="service-card__icon"><i class="fa-solid fa-location-dot"></i></div>
+            <h3>Google My Business Optimization</h3>
+            <p>Want to get your business noticed locally? Our GMB optimization service makes sure your profile is fully
+              optimized with the right details, eye-catching photos, fresh posts, and the best keywords to rank higher
+              in local searches.</p>
+            <ul class="service-card__list">
+              <li><i class="fa-solid fa-check"></i> GMB Listing Optimization</li>
+              <li><i class="fa-solid fa-check"></i> Review &amp; Reputation Management</li>
+              <li><i class="fa-solid fa-check"></i> Business Profile Updates</li>
+              <li><i class="fa-solid fa-check"></i> GMB Insights &amp; Analytics</li>
+            </ul>
+            <a href="google-my-business-optimization.html" class="service-card__link">Learn More <i
+                class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <article class="service-card service-card--dark">
+            <span class="service-card__num">04</span>
+            <div class="service-card__icon"><i class="fa-solid fa-bullseye"></i></div>
+            <h3>PPC &amp; Lead Campaigns</h3>
+            <p>Need more leads and clicks? Our PPC and lead campaigns put your business in front of the right people.
+              From research and ad creation to monitoring and optimization, we handle every detail to get you the best
+              results possible.</p>
+            <ul class="service-card__list">
+              <li><i class="fa-solid fa-check"></i> PPC Campaign Management</li>
+              <li><i class="fa-solid fa-check"></i> Targeted Lead Generation</li>
+              <li><i class="fa-solid fa-check"></i> Conversion Rate Optimization</li>
+              <li><i class="fa-solid fa-check"></i> Performance Tracking &amp; Reporting</li>
+            </ul>
+            <a href="contact.html" class="service-card__link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- We Bring Customers to Your Doorstep -->
+    <section class="section section--dark features">
+      <div class="container">
+        <div class="features__layout">
+          <div class="features__intro">
+            <span class="eyebrow">Why Work With Us</span>
+            <h2>We Bring Customers to Your Doorstep</h2>
+            <p>We are committed to providing our customers with exceptional services while achieving their business
+              goals.</p>
+            <a href="about-us.html" class="btn btn--primary btn--lg">Learn More <i
+                class="fa-solid fa-arrow-right"></i></a>
+            <div class="features__intro-stat">
+              <div class="features__intro-stat-icon"><i class="fa-solid fa-users"></i></div>
+              <div class="features__intro-stat-body">
+                <strong>500+</strong>
+                <span>Businesses Trust Digi Era Pro</span>
+              </div>
+            </div>
+          </div>
+          <div class="features__list">
+            <div class="feature-row">
+              <span class="feature-row__ghost">01</span>
+              <div class="feature-row__icon"><i class="fa-solid fa-calendar-check"></i></div>
+              <div class="feature-row__body">
+                <h3>Flexible Schedule</h3>
+                <p>Easily book appointments that fit your busy lifestyle, with complete flexibility.</p>
+                <span class="feature-row__underline"></span>
+              </div>
+            </div>
+            <div class="feature-row feature-row--offset">
+              <span class="feature-row__ghost">02</span>
+              <div class="feature-row__icon"><i class="fa-solid fa-sack-dollar"></i></div>
+              <div class="feature-row__body">
+                <h3>Pocket Friendly</h3>
+                <p>Get the best value for your investment with budget-friendly options tailored to you.</p>
+                <span class="feature-row__underline"></span>
+              </div>
+            </div>
+            <div class="feature-row">
+              <span class="feature-row__ghost">03</span>
+              <div class="feature-row__icon"><i class="fa-solid fa-user-graduate"></i></div>
+              <div class="feature-row__body">
+                <h3>Expert Instructor</h3>
+                <p>Gain valuable insights and skills from industry experts who are committed to your success.</p>
+                <span class="feature-row__underline"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why You'll Love It + Stats -->
+    <section class="section love-it">
+      <div class="container love-it__inner">
+        <div class="love-it__visual">
+          <div class="love-it__blob" aria-hidden="true"></div>
+          <div class="love-it__photo">
+            <img src="assets/images/stock/1522202176988-66273c2fd55f-w1600.jpg"
+              alt="Digi Era Pro clients collaborating and enjoying working with the team" loading="lazy">
+          </div>
+          <div class="love-it__stamp"><span>Since</span><strong>2018</strong></div>
+          <div class="love-it__float love-it__float--top">
+            <div class="love-it__float-icon"><i class="fa-solid fa-globe"></i></div>
+            <div class="love-it__float-body">
+              <strong><span class="stat-box__num" data-count="500">0</span>+</strong>
+              <span>Websites Delivered</span>
+            </div>
+          </div>
+          <div class="love-it__float love-it__float--bottom">
+            <div class="love-it__float-icon"><i class="fa-solid fa-trophy"></i></div>
+            <div class="love-it__float-body">
+              <strong><span class="stat-box__num" data-count="7">0</span></strong>
+              <span>Years of Experience</span>
+            </div>
+          </div>
+        </div>
+        <div class="love-it__content">
+          <span class="eyebrow">Why Businesses Love Working With Us</span>
+          <h2>Why You'll Love It</h2>
+          <p class="love-it__highlight">We Make Growing Your Business Simple, Fun, and Most Importantly, Effective!</p>
+          <p>We turn business growth into a smooth, exciting process. Our proven strategies deliver real outcomes, so
+            you can enjoy the journey while seeing the results you've been looking for.</p>
+          <ul class="checklist">
+            <li><i class="fa-solid fa-circle-check"></i> Custom Solutions Just for You</li>
+            <li><i class="fa-solid fa-circle-check"></i> Real Results, Real Progress</li>
+            <li><i class="fa-solid fa-circle-check"></i> Expert Support at Every Step</li>
+          </ul>
+          <div class="love-it__mini-stats">
+            <div class="love-it__mini-stat">
+              <i class="fa-solid fa-location-dot"></i>
+              <div><strong><span class="stat-box__num" data-count="800">0</span>+</strong><span>GMB Profiles
+                  Optimized</span></div>
+            </div>
+            <div class="love-it__mini-stat">
+              <i class="fa-solid fa-magnifying-glass-chart"></i>
+              <div><strong><span class="stat-box__num" data-count="650">0</span>+</strong><span>SEO Campaigns</span>
+              </div>
+            </div>
+          </div>
+          <a href="about-us.html" class="btn btn--primary">Discover More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section section--tint" id="whyChooseUs">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">Here's What Makes Us Different</span>
+          <h2>Why Choose Us?</h2>
+          <p>There are a lot of digital marketing agencies out there. Here's why we stand out: our commitment to your
+            success, our customized approach, and our results-driven strategies.</p>
+        </div>
+        <div class="why-us__panel" id="whyUsPanel">
+          <div class="why-us__tabs">
+            <button class="why-us__tab is-active" data-tab="0" type="button">
+              <span class="why-us__tab-num">01</span>
+              <span class="why-us__tab-label">
+                <strong>Our Mission</strong>
+                <span>Why we do what we do</span>
+              </span>
+              <i class="fa-solid fa-flag why-us__tab-icon"></i>
+            </button>
+            <button class="why-us__tab" data-tab="1" type="button">
+              <span class="why-us__tab-num">02</span>
+              <span class="why-us__tab-label">
+                <strong>Our Vision</strong>
+                <span>Where we're headed</span>
+              </span>
+              <i class="fa-solid fa-eye why-us__tab-icon"></i>
+            </button>
+            <button class="why-us__tab" data-tab="2" type="button">
+              <span class="why-us__tab-num">03</span>
+              <span class="why-us__tab-label">
+                <strong>Our Philosophy</strong>
+                <span>How we work with you</span>
+              </span>
+              <i class="fa-solid fa-handshake why-us__tab-icon"></i>
+            </button>
+          </div>
+          <div class="why-us__stage">
+            <div class="why-us__panel-item is-active" data-panel="0">
+              <span class="why-us__panel-num">01</span>
+              <div class="why-us__panel-icon"><i class="fa-solid fa-flag"></i></div>
+              <h3>Our Mission</h3>
+              <p>Our mission is simple: to help your business grow through smart, results-driven marketing strategies
+                that truly work.</p>
+            </div>
+            <div class="why-us__panel-item" data-panel="1">
+              <span class="why-us__panel-num">02</span>
+              <div class="why-us__panel-icon"><i class="fa-solid fa-eye"></i></div>
+              <h3>Our Vision</h3>
+              <p>We aim to be your go-to partner for innovative marketing solutions, helping you turn big ideas into
+                even bigger successes.</p>
+            </div>
+            <div class="why-us__panel-item" data-panel="2">
+              <span class="why-us__panel-num">03</span>
+              <div class="why-us__panel-icon"><i class="fa-solid fa-handshake"></i></div>
+              <h3>Our Philosophy</h3>
+              <p>We believe in collaboration, creativity, and constant growth. When we work together, we make sure your
+                business thrives, every step of the way.</p>
+            </div>
+          </div>
+        </div>
+        <div class="pill-list">
+          <span><i class="fa-solid fa-check"></i> Plans made just for you</span>
+          <span><i class="fa-solid fa-check"></i> Growth you can see</span>
+          <span><i class="fa-solid fa-check"></i> Expert Team on your side</span>
+          <span><i class="fa-solid fa-check"></i> Ideas that keep you ahead</span>
+          <span><i class="fa-solid fa-check"></i> Clear Updates throughout</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results Snapshot (bg-image stat banner) -->
+    <section class="stat-banner" style="background-image:url('assets/images/stock/1556761175-5973dc0f32e7-w1800.jpg');">
+      <div class="stat-banner__overlay"></div>
+      <div class="container">
+        <div class="stat-banner__head">
+          <span class="eyebrow eyebrow--light">By The Numbers</span>
+          <h2>Real Work. Real Results.</h2>
+        </div>
+        <div class="stat-banner__grid">
+          <div class="stat-banner__item">
+            <div class="stat-banner__icon"><i class="fa-solid fa-globe"></i></div>
+            <span class="stat-banner__num" data-count="387">0</span><span class="stat-banner__plus">+</span>
+            <span class="stat-banner__label">Websites</span>
+          </div>
+          <div class="stat-banner__item">
+            <div class="stat-banner__icon"><i class="fa-solid fa-location-dot"></i></div>
+            <span class="stat-banner__num" data-count="723">0</span><span class="stat-banner__plus">+</span>
+            <span class="stat-banner__label">Google My Business Optimization</span>
+          </div>
+          <div class="stat-banner__item">
+            <div class="stat-banner__icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+            <span class="stat-banner__num" data-count="291">0</span><span class="stat-banner__plus">+</span>
+            <span class="stat-banner__label">Search Engine Optimization</span>
+          </div>
+          <div class="stat-banner__item">
+            <div class="stat-banner__icon"><i class="fa-solid fa-layer-group"></i></div>
+            <span class="stat-banner__num" data-count="489">0</span><span class="stat-banner__plus">+</span>
+            <span class="stat-banner__label">Other Services</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Your Success is Our Greatest Achievement -->
+    <section class="section success">
+      <div class="container success__grid">
+        <div class="success__side">
+          <div class="success__card">
+            <div class="success__card-pattern" aria-hidden="true"></div>
+            <h3>We're Invested in Your Growth, Not Just Your Campaigns!</h3>
+          </div>
+          <div class="success__points">
+            <div class="success__point">
+              <div class="success__point-icon"><i class="fa-solid fa-medal"></i></div>
+              <div class="success__point-body">
+                <h4>Customer Satisfaction</h4>
+                <span>Core Feature</span>
+              </div>
+            </div>
+            <div class="success__point">
+              <div class="success__point-icon"><i class="fa-solid fa-rocket"></i></div>
+              <div class="success__point-body">
+                <h4>Commitment &amp; Delivery On Time</h4>
+                <span>Basic Rule</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="success__content">
+          <span class="eyebrow">Client Success</span>
+          <h2>Your Success is Our Greatest Achievement</h2>
+          <p>Our client's success is our reputation. We measure our success by your success. We don't just focus on the
+            big numbers; we care about how our work helps you grow, adapt, and thrive in a constantly changing digital
+            world — see how we've helped others like you.</p>
+          <div class="success__media">
+            <div class="success__media-frame">
+              <img src="assets/images/stock/1560472354-b33ff0c44a43-w1600.jpg"
+                alt="Live analytics dashboard showing growth in clicks, impressions, and search rankings"
+                loading="lazy">
+              <div class="success__media-badge">
+                <i class="fa-solid fa-arrow-trend-up"></i>
+                <div><strong>+156%</strong><span>Avg. Visibility</span></div>
+              </div>
+            </div>
+            <ul class="success__checklist">
+              <li><i class="fa-solid fa-check"></i> Personalized Solutions</li>
+              <li><i class="fa-solid fa-check"></i> Measurable Growth</li>
+              <li><i class="fa-solid fa-check"></i> Staying Ahead</li>
+              <li><i class="fa-solid fa-check"></i> Proven Success</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section testimonials" id="reviews">
+      <div class="testimonials__glow" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">Client Love</span>
+          <h2>See What Our Clients Have to Say!</h2>
+          <div class="rating-summary">
+            <span class="rating-summary__badge">EXCELLENT</span>
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <span>Based on 60 reviews</span>
+          </div>
+        </div>
+
+        <div class="testimonials__viewport">
+          <div class="testimonials__track" id="testimonialTrack">
+            <div class="testimonial-card">
+              <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <p>"I have been working with Henry for one month now. They built me a quality website for the fairest
+                price around... The level of professionalism and customer service is amazing and I am so grateful I have
+                Henry to work and grow my business with."</p>
+              <div class="testimonial-card__author"><span class="avatar">G</span>
+                <div><strong>Gavin S</strong><span>Verified Client</span></div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <p>"Since November 2025, Kate and her team have been working on optimizing my business profile,
+                significantly improving our visibility, positioning, and overall performance compared to where we
+                started. We are happy to continue working with them."</p>
+              <div class="testimonial-card__author"><span class="avatar">S</span>
+                <div><strong>Spot O</strong><span>Verified Client</span></div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <p>"Henry, and the rest of the team at Digi Era Pro LLC really know their stuff. They initiated a
+                multi-faceted approach that is raising the ranking of my Google Business Profile almost daily."</p>
+              <div class="testimonial-card__author"><span class="avatar">B</span>
+                <div><strong>Bill</strong><span>Verified Client</span></div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <p>"Paul has been absolutely exceptional. His level of professionalism, responsiveness, and genuine care
+                makes a real difference in how my account is managed day to day. Highly recommended."</p>
+              <div class="testimonial-card__author"><span class="avatar">I</span>
+                <div><strong>IBuilders D</strong><span>Verified Client</span></div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <p>"I've had a great experience working with Digi Era Pro, especially Kate Lyn. She handles my flyers and
+                social media content, and the quality has been consistently solid."</p>
+              <div class="testimonial-card__author"><span class="avatar">W</span>
+                <div><strong>Wansley R</strong><span>Verified Client</span></div>
+              </div>
+            </div>
+            <!-- duplicate set for seamless infinite loop -->
+            <div class="testimonial-card" aria-hidden="true">
+              <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <p>"I have been working with Henry for one month now. They built me a quality website for the fairest
+                price around... The level of professionalism and customer service is amazing and I am so grateful I have
+                Henry to work and grow my business with."</p>
+              <div class="testimonial-card__author"><span class="avatar">G</span>
+                <div><strong>Gavin S</strong><span>Verified Client</span></div>
+              </div>
+            </div>
+            <div class="testimonial-card" aria-hidden="true">
+              <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <p>"Since November 2025, Kate and her team have been working on optimizing my business profile,
+                significantly improving our visibility, positioning, and overall performance compared to where we
+                started. We are happy to continue working with them."</p>
+              <div class="testimonial-card__author"><span class="avatar">S</span>
+                <div><strong>Spot O</strong><span>Verified Client</span></div>
+              </div>
+            </div>
+            <div class="testimonial-card" aria-hidden="true">
+              <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <p>"Henry, and the rest of the team at Digi Era Pro LLC really know their stuff. They initiated a
+                multi-faceted approach that is raising the ranking of my Google Business Profile almost daily."</p>
+              <div class="testimonial-card__author"><span class="avatar">B</span>
+                <div><strong>Bill</strong><span>Verified Client</span></div>
+              </div>
+            </div>
+            <div class="testimonial-card" aria-hidden="true">
+              <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <p>"Paul has been absolutely exceptional. His level of professionalism, responsiveness, and genuine care
+                makes a real difference in how my account is managed day to day. Highly recommended."</p>
+              <div class="testimonial-card__author"><span class="avatar">I</span>
+                <div><strong>IBuilders D</strong><span>Verified Client</span></div>
+              </div>
+            </div>
+            <div class="testimonial-card" aria-hidden="true">
+              <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <p>"I've had a great experience working with Digi Era Pro, especially Kate Lyn. She handles my flyers and
+                social media content, and the quality has been consistently solid."</p>
+              <div class="testimonial-card__author"><span class="avatar">W</span>
+                <div><strong>Wansley R</strong><span>Verified Client</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trusted Partner + FAQ -->
+    <section class="section section--tint faq" id="faq">
+      <div class="container">
+        <div class="faq__layout">
+          <div class="faq__intro">
+            <!-- <span class="eyebrow">Why Choose Digi Era Pro</span> -->
+            <h2>Your Trusted Partner in Business Success</h2>
+            <div class="faq__intro-photo">
+              <img src="assets/images/stock/1533750349088-cd871a92f312-w1600.jpg"
+                alt="Marketing strategy planning notes laid out on a desk" loading="lazy">
+            </div>
+            <p>Digi Era Pro is your trusted partner in business success. We offer a full range of services — from Local
+              Search Engine Optimization and Web Development to Social Media Marketing, Apps Development, Google My
+              Business Optimization, Landing Pages, and Logo Design.</p>
+            <div class="faq__skills">
+              <div class="faq__skill">
+                <div class="faq__skill-head"><span>Web Development</span><strong>94%</strong></div>
+                <div class="faq__skill-bar" data-percent="94"><span></span></div>
+              </div>
+              <div class="faq__skill">
+                <div class="faq__skill-head"><span>Search Engine Optimization</span><strong>93%</strong></div>
+                <div class="faq__skill-bar" data-percent="93"><span></span></div>
+              </div>
+              <div class="faq__skill">
+                <div class="faq__skill-head"><span>GMB Optimization</span><strong>95%</strong></div>
+                <div class="faq__skill-bar" data-percent="95"><span></span></div>
+              </div>
+              <div class="faq__skill">
+                <div class="faq__skill-head"><span>Social Media Marketing</span><strong>90%</strong></div>
+                <div class="faq__skill-bar" data-percent="90"><span></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="faq__accordion-col">
+            <span class="eyebrow">Got Questions?</span>
+            <div class="accordion" id="faqAccordion">
+              <div class="accordion__item is-open">
+                <button class="accordion__trigger">
+                  <span>1. What makes your digital marketing strategies different from others?</span>
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+                <div class="accordion__panel">
+                  <p>We believe in a tailored approach. Every business is unique, so we create strategies that align
+                    with your specific goals, audience, and brand. Instead of using generic solutions, we focus on what
+                    will actually work for you and bring measurable results.</p>
+                </div>
+              </div>
+              <div class="accordion__item">
+                <button class="accordion__trigger">
+                  <span>2. How long will it take to see results?</span>
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+                <div class="accordion__panel">
+                  <p>Results vary depending on your business and goals, but we focus on quick wins while working towards
+                    long-term growth. You can typically expect to see noticeable improvements in 3-6 months, depending
+                    on the service and strategy in place.</p>
+                </div>
+              </div>
+              <div class="accordion__item">
+                <button class="accordion__trigger">
+                  <span>3. How do you determine which digital marketing strategies will work for my business?</span>
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+                <div class="accordion__panel">
+                  <p>We start by understanding your business, target audience, and objectives. From there, we analyze
+                    the best channels and tactics that will resonate with your audience. Whether it's SEO, PPC, or
+                    social media marketing, we choose what will get the best results for you.</p>
+                </div>
+              </div>
+              <div class="accordion__item">
+                <button class="accordion__trigger">
+                  <span>4. What kind of businesses do you work with?</span>
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+                <div class="accordion__panel">
+                  <p>We work with businesses of all sizes, from startups to well-established companies. Whether you're a
+                    local brand looking to boost visibility or a growing business ready to scale, we tailor our services
+                    to meet your specific needs and goals.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+      <div class="container cta-banner__inner">
+        <h2>When We Work Together, Success is Inevitable: Let's Build Something Amazing for Your Business!</h2>
+        <a href="contact.html" class="btn btn--white btn--lg">Contact With Us <i
+            class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img src="assets/images/logo-full.png" alt="Digi Era Pro LLC" class="footer__logo">
+        <p>Your partner in building a strong online presence with creative, results-focused marketing!</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <ul class="footer__contact">
+          <li><i class="fa-solid fa-phone"></i>
+            <div><strong>General Inquiries</strong><a href="tel:17866001595">(786) 600-1595</a></div>
+          </li>
+          <li><i class="fa-solid fa-headset"></i>
+            <div><strong>Sales Department</strong><a href="tel:18325217343">(832) 521-7343</a></div>
+          </li>
+          <li><i class="fa-solid fa-envelope"></i>
+            <div><strong>Email Us</strong><a href="mailto:info@digierapro.com">info@digierapro.com</a></div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__col footer__whatsapp">
+        <h4>Follow Our Channel</h4>
+        <p>For the latest updates and news, join our WhatsApp channel.</p>
+        <a href="https://www.whatsapp.com/channel/0029Va9rAuz35fLvhz6FN80z" class="btn btn--primary btn--sm"><i
+            class="fa-brands fa-whatsapp"></i> Join Channel</a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <span>©2021. All rights reserved by Digi Era Pro LLC</span>
+        <a href="terms-conditions.html">Terms &amp; Conditions</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="tel:17866001595" class="mobile-call-fab" aria-label="Call us"><i class="fa-solid fa-phone"></i></a>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

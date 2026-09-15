@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <script>
+(function () {
+  try {
+    var stored = localStorage.getItem('digierapro-theme');
+    var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+  } catch (e) {}
+})();
+  </script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Services | Digi Era Pro LLC</title>
+<meta name="description" content="Explore the full range of digital marketing services from Digi Era Pro &mdash; web development, SEO, GBP optimization, branding, and more.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="topbar">
+  <div class="container topbar__inner">
+    <div class="topbar__left">
+      <span><i class="fa-regular fa-clock"></i> 9:00 AM – 5:00 PM EST</span>
+      <span><i class="fa-solid fa-envelope"></i> info@digierapro.com</span>
+    </div>
+    <div class="topbar__right">
+      <span class="topbar__badges">Partner With: Google Partners &middot; Meta Business Partner &middot; Trustpilot</span>
+      <a href="tel:17866001595"><i class="fa-solid fa-phone"></i> (786) 600-1595</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="index.html" class="header__logo">
+      <img src="assets/images/logo-wordmark.png" alt="Digi Era Pro LLC">
+    </a>
+    <nav class="nav" id="nav">
+      <ul class="nav__list">
+        <li><a href="index.html">Home</a></li>
+        <li class="has-dropdown">
+          <a href="services.html" class="active">Services <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="google-my-business-optimization.html">GBP Optimization</a></li>
+            <li><a href="landing-page-website.html">Landing Page Website</a></li>
+            <li><a href="web-development.html">Web Development</a></li>
+            <li><a href="search-engine-optimization.html">Search Engine Optimization</a></li>
+            <li><a href="social-media-marketing.html">Social Media Marketing</a></li>
+            <li><a href="google-ads.html">Google Ads</a></li>
+            <li><a href="citations.html">Citations &amp; Backlinks</a></li>
+            <li><a href="branding.html">Branding</a></li>
+            <li><a href="graphic-designing.html">Graphic Designing</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="amazon.html">Amazon</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="apps.html">Apps</a></li>
+            <li><a href="ecommerce.html">Ecommerce</a></li>
+            <li><a href="software.html">Software</a></li>
+            <li><a href="virtual-ai-solutions.html">Virtual AI Solution</a></li>
+          </ul>
+        </li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="google-my-business-optimization.html">Special Offer</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header__actions">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+        <i class="fa-solid fa-sun theme-toggle__icon theme-toggle__icon--sun"></i>
+        <i class="fa-solid fa-moon theme-toggle__icon theme-toggle__icon--moon"></i>
+      </button>
+      <a href="contact.html" class="btn btn--primary">Contact With Us</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="nav-overlay" id="navOverlay"></div>
+
+<main>
+  <section class="page-hero" style="background-image:url('assets/images/stock/1533750349088-cd871a92f312-w1600.jpg');">
+    <div class="page-hero__scrim"></div>
+    <div class="container">
+      <span class="eyebrow">What We Do</span>
+      <h1>Our Services</h1>
+      <p class="page-hero__lead">From web development and SEO to branding, reviews, and AI-powered support &mdash; explore the full range of services Digi Era Pro offers to help your business grow.</p>
+      <div class="breadcrumb"><a href="index.html">Home</a> <i class="fa-solid fa-chevron-right"></i> <span>Services</span></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow">Full-Service Digital Marketing</span>
+        <h2>Everything Your Business Needs to Grow</h2>
+        <p>Digi Era Pro is a digital marketing agency that provides personalized solutions to make your business stand out. Explore our services below, or reach out and we'll help you find the right fit.</p>
+      </div>
+      <div class="services-index__grid">
+        <div class="service-mini-card">
+          <div class="service-mini-card__icon"><i class="fa-solid fa-location-dot"></i></div>
+          <h3>Google My Business Optimization</h3>
+          <p>Get discovered faster in local search with a fully optimized Google Business Profile.</p>
+          <a href="google-my-business-optimization.html" class="service-mini-card__link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="service-mini-card">
+          <div class="service-mini-card__icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+          <h3>Search Engine Optimization</h3>
+          <p>Rank higher, reach further, and attract the customers actively searching for you.</p>
+          <a href="search-engine-optimization.html" class="service-mini-card__link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="service-mini-card">
+          <div class="service-mini-card__icon"><i class="fa-solid fa-share-nodes"></i></div>
+          <h3>Social Media Marketing</h3>
+          <p>Personalized social strategies that turn your profiles into powerful business assets.</p>
+          <a href="social-media-marketing.html" class="service-mini-card__link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="service-mini-card">
+          <div class="service-mini-card__icon"><i class="fa-solid fa-bullseye"></i></div>
+          <h3>Google Ads</h3>
+          <p>Certified Google Partner PPC management focused on lowering CPA and scaling ROAS.</p>
+          <a href="google-ads.html" class="service-mini-card__link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="service-mini-card">
+          <div class="service-mini-card__icon"><i class="fa-solid fa-palette"></i></div>
+          <h3>Branding</h3>
+          <p>Strategy, visual identity, and digital branding that make your business unforgettable.</p>
+          <a href="branding.html" class="service-mini-card__link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="service-mini-card">
+          <div class="service-mini-card__icon"><i class="fa-solid fa-pen-ruler"></i></div>
+          <h3>Graphic Designing</h3>
+          <p>Logos, layouts, and visuals crafted to define your brand's identity.</p>
+          <a href="graphic-designing.html" class="service-mini-card__link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="service-mini-card">
+          <div class="service-mini-card__icon"><i class="fa-solid fa-rectangle-ad"></i></div>
+          <h3>Landing Page Website</h3>
+          <p>Focused, conversion-ready landing pages designed to turn visitors into leads.</p>
+          <a href="landing-page-website.html" class="service-mini-card__link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="service-mini-card">
+          <div class="service-mini-card__icon"><i class="fa-solid fa-map-location-dot"></i></div>
+          <h3>Citations &amp; Backlinks</h3>
+          <p>Consistent, accurate citations that boost your local search visibility.</p>
+          <a href="citations.html" class="service-mini-card__link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="service-mini-card">
+          <div class="service-mini-card__icon"><i class="fa-solid fa-star"></i></div>
+          <h3>Reviews</h3>
+          <p>Gather, manage, and showcase glowing reviews that build trust and credibility.</p>
+          <a href="reviews.html" class="service-mini-card__link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="service-mini-card">
+          <div class="service-mini-card__icon"><i class="fa-solid fa-cart-shopping"></i></div>
+          <h3>Amazon</h3>
+          <p>Listing optimization, PPC, FBA management, and brand protection for your Amazon store.</p>
+          <a href="amazon.html" class="service-mini-card__link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="service-mini-card">
+          <div class="service-mini-card__icon"><i class="fa-solid fa-gamepad"></i></div>
+          <h3>Games</h3>
+          <p>Game concept, design, development, and QA testing from idea to launch.</p>
+          <a href="games.html" class="service-mini-card__link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="service-mini-card">
+          <div class="service-mini-card__icon"><i class="fa-solid fa-cart-plus"></i></div>
+          <h3>Ecommerce</h3>
+          <p>Custom online stores built to turn browsers into buyers.</p>
+          <a href="ecommerce.html" class="service-mini-card__link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="service-mini-card">
+          <div class="service-mini-card__icon"><i class="fa-solid fa-laptop-code"></i></div>
+          <h3>Software</h3>
+          <p>Custom software, automation tools, and CRM/ERP systems built around your business.</p>
+          <a href="software.html" class="service-mini-card__link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="service-mini-card">
+          <div class="service-mini-card__icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+          <h3>Apps</h3>
+          <p>Intuitive, engaging web and mobile apps built end-to-end.</p>
+          <a href="apps.html" class="service-mini-card__link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="service-mini-card">
+          <div class="service-mini-card__icon"><i class="fa-solid fa-robot"></i></div>
+          <h3>Virtual AI Solutions</h3>
+          <p>24/7 AI virtual assistants that automate support and protect your brand's reputation.</p>
+          <a href="virtual-ai-solutions.html" class="service-mini-card__link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="service-mini-card">
+          <div class="service-mini-card__icon"><i class="fa-solid fa-globe"></i></div>
+          <h3>Website Development</h3>
+          <p>Professional, custom websites delivered on time with a year of free support.</p>
+          <a href="website-development.html" class="service-mini-card__link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="service-mini-card">
+          <div class="service-mini-card__icon"><i class="fa-solid fa-code"></i></div>
+          <h3>Web Development</h3>
+          <p>Custom, user-friendly websites optimized with SEO and digital marketing strategies.</p>
+          <a href="web-development.html" class="service-mini-card__link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="cta-banner">
+    <div class="container cta-banner__inner">
+      <h2>Not sure which service is right for you? Let's talk about your goals and build a plan together.</h2>
+      <a href="contact.html" class="btn btn--white btn--lg">Contact With Us <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <img src="assets/images/logo-full.png" alt="Digi Era Pro LLC" class="footer__logo">
+      <p>Your partner in building a strong online presence with creative, results-focused marketing!</p>
+      <div class="footer__social">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+
+    <div class="footer__col">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4>Contact</h4>
+      <ul class="footer__contact">
+        <li><i class="fa-solid fa-phone"></i><div><strong>General Inquiries</strong><a href="tel:17866001595">(786) 600-1595</a></div></li>
+        <li><i class="fa-solid fa-headset"></i><div><strong>Sales Department</strong><a href="tel:18325217343">(832) 521-7343</a></div></li>
+        <li><i class="fa-solid fa-envelope"></i><div><strong>Email Us</strong><a href="mailto:info@digierapro.com">info@digierapro.com</a></div></li>
+      </ul>
+    </div>
+
+    <div class="footer__col footer__whatsapp">
+      <h4>Follow Our Channel</h4>
+      <p>For the latest updates and news, join our WhatsApp channel.</p>
+      <a href="https://www.whatsapp.com/channel/0029Va9rAuz35fLvhz6FN80z" class="btn btn--primary btn--sm"><i class="fa-brands fa-whatsapp"></i> Join Channel</a>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="container footer__bottom-inner">
+      <span>©2021. All rights reserved by Digi Era Pro LLC</span>
+      <a href="terms-conditions.html">Terms &amp; Conditions</a>
+    </div>
+  </div>
+</footer>
+
+<a href="tel:17866001595" class="mobile-call-fab" aria-label="Call us"><i class="fa-solid fa-phone"></i></a>
+
+<script src="js/script.js"></script>
+</body>
+</html>
