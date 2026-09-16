@@ -171,8 +171,33 @@ p {
 
 /* Hero slides keep their own solid/outline heading treatment. */
 .hero-slide .heading-cursor-target::before,
-.hero-slide .heading-cursor-target::after {
-  display: none;
+.hero-slide .heading-cursor-target::after,
+.footer .heading-cursor-target::before,
+.footer .heading-cursor-target::after {
+  content: none !important;
+  display: none !important;
+}
+
+.footer h1.heading-cursor-target,
+.footer h2.heading-cursor-target,
+.footer h3.heading-cursor-target,
+.footer h4.heading-cursor-target {
+  color: var(--color-heading) !important;
+  background: none !important;
+  -webkit-text-fill-color: currentColor !important;
+  isolation: auto;
+
+  .footer h1.heading-cursor-target::before,
+  .footer h2.heading-cursor-target::before,
+  .footer h3.heading-cursor-target::before,
+  .footer h4.heading-cursor-target::before,
+  .footer h1.heading-cursor-target::after,
+  .footer h2.heading-cursor-target::after,
+  .footer h3.heading-cursor-target::after,
+  .footer h4.heading-cursor-target::after {
+    content: none !important;
+    display: none !important;
+  }
 }
 
 [data-theme="dark"] .heading-cursor-target {

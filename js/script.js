@@ -545,7 +545,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.body.appendChild(headingLens);
 
     document.querySelectorAll('h1, h2, h3, h4').forEach(function (heading) {
-      if (heading.closest('.hero-slide')) return;
+      if (heading.closest('.hero-slide, .footer')) return;
 
       heading.addEventListener('mouseenter', function () {
         headingLens.classList.add('is-visible');
@@ -565,6 +565,25 @@ document.addEventListener('DOMContentLoaded', function () {
         headingLens.classList.remove('is-visible');
         heading.classList.remove('heading-cursor-target');
       });
+    });
+
+    document.querySelectorAll('.footer h1, .footer h2, .footer h3, .footer h4').forEach(function (heading) {
+      heading.classList.remove('heading-cursor-target');
+      heading.removeAttribute('data-heading-text');
+    });
+
+    document.querySelector('.footer')?.addEventListener('mouseenter', function () {
+      headingLens.classList.remove('is-visible');
+    });
+
+    document.addEventListener('mousemove', function (event) {
+      var footerHeading = event.target.closest && event.target.closest('.footer h1, .footer h2, .footer h3, .footer h4');
+      if (!footerHeading) return;
+      footerHeading.classList.remove('heading-cursor-target');
+      footerHeading.removeAttribute('data-heading-text');
+      footerHeading.style.removeProperty('--heading-lens-x');
+      footerHeading.style.removeProperty('--heading-lens-y');
+      headingLens.classList.remove('is-visible');
     });
   }
 
