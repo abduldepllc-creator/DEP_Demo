@@ -388,6 +388,16 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  /* ---------- Footer email subscription forms ---------- */
+  document.querySelectorAll('.footer__subscribe-form').forEach(function (subscribeForm) {
+    var subscribeNote = subscribeForm.querySelector('.footer__subscribe-note');
+    subscribeForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      if (subscribeNote) subscribeNote.hidden = false;
+      subscribeForm.reset();
+    });
+  });
+
   /* ---------- Hero Slider (scroll-driven presentation, desktop only) ---------- */
   var heroSlider = document.getElementById('heroSlider');
   if (heroSlider) {
@@ -526,5 +536,36 @@ document.addEventListener('DOMContentLoaded', function () {
   backToTop.addEventListener('click', function () {
     window.scrollTo({ top: 0, behavior: prefersReducedMotion ? 'auto' : 'smooth' });
   });
+
+  /* ---------- Heading cursor lens ---------- */
+  if (!prefersReducedMotion && window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+    var headingLens = document.createElement('span');
+    headingLens.className = 'heading-cursor-lens';
+    headingLens.setAttribute('aria-hidden', 'true');
+    document.body.appendChild(headingLens);
+
+    document.querySelectorAll('h1, h2, h3, h4').forEach(function (heading) {
+      if (heading.closest('.hero-slide')) return;
+
+      heading.addEventListener('mouseenter', function () {
+        headingLens.classList.add('is-visible');
+        heading.classList.add('heading-cursor-target');
+        heading.setAttribute('data-heading-text', heading.textContent.trim());
+      });
+
+      heading.addEventListener('mousemove', function (event) {
+        headingLens.style.left = event.clientX + 'px';
+        headingLens.style.top = event.clientY + 'px';
+        var bounds = heading.getBoundingClientRect();
+        heading.style.setProperty('--heading-lens-x', (event.clientX - bounds.left) + 'px');
+        heading.style.setProperty('--heading-lens-y', (event.clientY - bounds.top) + 'px');
+      });
+
+      heading.addEventListener('mouseleave', function () {
+        headingLens.classList.remove('is-visible');
+        heading.classList.remove('heading-cursor-target');
+      });
+    });
+  }
 
 });

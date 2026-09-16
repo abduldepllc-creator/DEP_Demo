@@ -1,267 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
+  <meta charset="UTF-8">
   <script>
-(function () {
-  try {
-    var stored = localStorage.getItem('digierapro-theme');
-    var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-    document.documentElement.setAttribute('data-theme', theme);
-  } catch (e) {}
-})();
+    (function () {
+      try {
+        var stored = localStorage.getItem('digierapro-theme');
+        var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) { }
+    })();
   </script>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Local Citation Services | Digi Era Pro LLC</title>
-<meta name="description" content="Rank higher locally with accurate, consistent citations across the web's most important business directories.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Citation Services | Digi Era Pro LLC</title>
+  <meta name="description"
+    content="Rank higher locally with accurate, consistent citations across the web's most important business directories.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<!-- Top Bar -->
-<div class="topbar">
-  <div class="container topbar__inner">
-    <div class="topbar__left">
-      <span><i class="fa-regular fa-clock"></i> 9:00 AM – 5:00 PM EST</span>
-      <span><i class="fa-solid fa-envelope"></i> info@digierapro.com</span>
-    </div>
-    <div class="topbar__right">
-      <span class="topbar__badges">Partner With: Google Partners &middot; Meta Business Partner &middot; Trustpilot</span>
-      <a href="tel:17866001595"><i class="fa-solid fa-phone"></i> (786) 600-1595</a>
+  <!-- Top Bar -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__left">
+        <span><i class="fa-regular fa-clock"></i> 9:00 AM – 5:00 PM EST</span>
+        <span><i class="fa-solid fa-envelope"></i> info@digierapro.com</span>
+      </div>
+      <div class="topbar__right">
+        <span class="topbar__badges">Partner With: Google Partners &middot; Meta Business Partner &middot;
+          Trustpilot</span>
+        <a href="tel:17866001595"><i class="fa-solid fa-phone"></i> (786) 600-1595</a>
+      </div>
     </div>
   </div>
-</div>
 
-<!-- Header -->
-<header class="header" id="header">
-  <div class="container header__inner">
-    <a href="index.html" class="header__logo">
-      <img src="assets/images/logo-wordmark.png" alt="Digi Era Pro LLC">
-    </a>
-    <nav class="nav" id="nav">
-      <ul class="nav__list">
-        <li><a href="index.html">Home</a></li>
-        <li class="has-dropdown">
-          <a href="services.html">Services <i class="fa-solid fa-chevron-down"></i></a>
-          <ul class="dropdown">
-            <li><a href="google-my-business-optimization.html">GBP Optimization</a></li>
-            <li><a href="landing-page-website.html">Landing Page Website</a></li>
-            <li><a href="web-development.html">Web Development</a></li>
-            <li><a href="search-engine-optimization.html">Search Engine Optimization</a></li>
-            <li><a href="social-media-marketing.html">Social Media Marketing</a></li>
-            <li><a href="google-ads.html">Google Ads</a></li>
-            <li><a href="citations.html" class="active">Citations &amp; Backlinks</a></li>
-            <li><a href="branding.html">Branding</a></li>
-            <li><a href="graphic-designing.html">Graphic Designing</a></li>
-            <li><a href="reviews.html">Reviews</a></li>
-            <li><a href="amazon.html">Amazon</a></li>
-            <li><a href="games.html">Games</a></li>
-            <li><a href="apps.html">Apps</a></li>
-            <li><a href="ecommerce.html">Ecommerce</a></li>
-            <li><a href="software.html">Software</a></li>
-            <li><a href="virtual-ai-solutions.html">Virtual AI Solution</a></li>
-          </ul>
-        </li>
-        <li><a href="about-us.html">About Us</a></li>
-        <li><a href="google-my-business-optimization.html">Special Offer</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="header__actions">
-      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
-        <i class="fa-solid fa-sun theme-toggle__icon theme-toggle__icon--sun"></i>
-        <i class="fa-solid fa-moon theme-toggle__icon theme-toggle__icon--moon"></i>
-      </button>
-      <a href="contact.html" class="btn btn--primary">Contact With Us</a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <img src="assets/images/logo-wordmark.png" alt="Digi Era Pro LLC">
+      </a>
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="index.html">Home</a></li>
+          <li class="has-dropdown">
+            <a href="services.html">Services <i class="fa-solid fa-chevron-down"></i></a>
+            <ul class="dropdown">
+              <li><a href="google-my-business-optimization.html">GBP Optimization</a></li>
+              <li><a href="landing-page-website.html">Landing Page Website</a></li>
+              <li><a href="web-development.html">Web Development</a></li>
+              <li><a href="search-engine-optimization.html">Search Engine Optimization</a></li>
+              <li><a href="social-media-marketing.html">Social Media Marketing</a></li>
+              <li><a href="google-ads.html">Google Ads</a></li>
+              <li><a href="citations.html" class="active">Citations &amp; Backlinks</a></li>
+              <li><a href="branding.html">Branding</a></li>
+              <li><a href="graphic-designing.html">Graphic Designing</a></li>
+              <li><a href="reviews.html">Reviews</a></li>
+              <li><a href="amazon.html">Amazon</a></li>
+              <li><a href="games.html">Games</a></li>
+              <li><a href="apps.html">Apps</a></li>
+              <li><a href="ecommerce.html">Ecommerce</a></li>
+              <li><a href="software.html">Software</a></li>
+              <li><a href="virtual-ai-solutions.html">Virtual AI Solution</a></li>
+            </ul>
+          </li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="google-my-business-optimization.html">Special Offer</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+          <i class="fa-solid fa-sun theme-toggle__icon theme-toggle__icon--sun"></i>
+          <i class="fa-solid fa-moon theme-toggle__icon theme-toggle__icon--moon"></i>
+        </button>
+        <a href="contact.html" class="btn btn--primary">Contact With Us</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
-  </div>
-</header>
-<div class="nav-overlay" id="navOverlay"></div>
+  </header>
+  <div class="nav-overlay" id="navOverlay"></div>
 
-<main>
-  <section class="page-hero" style="background-image:url('assets/images/stock/1524661135-423995f22d0b-w1600.jpg');">
-    <div class="page-hero__scrim"></div>
-    <div class="container">
-      <span class="eyebrow">Citations &amp; Backlinks</span>
-      <h1>Let's Help You Rank Higher Locally with Accurate Citations</h1>
-      <p class="page-hero__lead">Consistent, accurate citations across the web to boost your local visibility.</p>
-      <div class="breadcrumb"><a href="index.html">Home</a> <i class="fa-solid fa-chevron-right"></i> <span>Citations</span></div>
-    </div>
-  </section>
-  <section class="section">
-    <div class="container service-intro">
-      <p>Want to be found by local customers? Our citation services ensure your business info is consistent across important directories, helping you stand out in local searches. With accurate and up-to-date citations, we boost your visibility, build credibility, and make it easier for potential customers to find you. Our Professional Citation Services are designed to help businesses stand out in local search results and drive more traffic to their websites.</p>
-    </div>
-  </section>
-  <section class="section section--tint">
-    <div class="container">
-      <div class="section__head">
-        <span class="eyebrow">Local SEO</span>
-        <h2>Why Citations Matter for Local SEO</h2>
-      </div>
-      <div class="benefits__grid">
-        <div class="benefit-item"><div class="benefit-item__icon"><i class="fa-solid fa-ranking-star"></i></div><h3>Improves Local Search Rankings</h3><p>Consistent citations across directories boost your visibility, helping your business appear higher in local search results.</p></div>
-        <div class="benefit-item"><div class="benefit-item__icon"><i class="fa-solid fa-route"></i></div><h3>Increases Local Traffic</h3><p>Correct citations make it easier for customers to find you online or in person, driving more visits to your business.</p></div>
-        <div class="benefit-item"><div class="benefit-item__icon"><i class="fa-solid fa-globe"></i></div><h3>Enhances Online Presence</h3><p>Citations ensure your business info is everywhere it needs to be, expanding your digital footprint.</p></div>
-        <div class="benefit-item"><div class="benefit-item__icon"><i class="fa-solid fa-shield-halved"></i></div><h3>Builds Trust and Credibility</h3><p>Accurate citations show search engines your business is trustworthy, improving your reputation.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="section__head">
-        <span class="eyebrow">Our Process</span>
-        <h2>The Citation Process That Works for You!</h2>
-      </div>
-      <div class="process__grid process__grid--3">
-        <div class="process-step"><div class="process-step__num">1</div><h3>Business Audit</h3><p>We begin with a thorough audit of your online presence, identifying any discrepancies in your information.</p></div>
-        <div class="process-step"><div class="process-step__num">2</div><h3>Identifying Key Directories</h3><p>We research and target the most relevant local and industry-specific directories for your business.</p></div>
-        <div class="process-step"><div class="process-step__num">3</div><h3>Accurate Submissions</h3><p>We meticulously submit your business details, making sure your NAP info is 100% consistent.</p></div>
-        <div class="process-step"><div class="process-step__num">4</div><h3>Citation Monitoring</h3><p>We monitor your citations regularly to ensure they remain accurate across the web.</p></div>
-        <div class="process-step"><div class="process-step__num">5</div><h3>Ongoing Optimization</h3><p>We continuously optimize your citations, staying on top of industry trends and algorithm changes.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--tint" id="pricing">
-    <div class="container">
-      <div class="section__head">
-        <span class="eyebrow">The Authority Amplifier</span>
-        <h2>Citations Pricing &mdash; Choose Your Best Plan</h2>
-      </div>
-      <div class="pricing__grid pricing__grid--2">
-        <div class="pricing-card">
-          <div class="pricing-card__name">Gold</div>
-          <div class="pricing-card__price">$599<span>/Month</span></div>
-          <ul class="pricing-card__list">
-            <li><i class="fa-solid fa-check"></i> 30+ High-Authority Backlinks</li>
-            <li><i class="fa-solid fa-check"></i> DA 60+ Guaranteed Sites</li>
-            <li><i class="fa-solid fa-check"></i> 30+ High-Quality NAP Citations</li>
-            <li><i class="fa-solid fa-check"></i> 20+ Premium Business Directories</li>
-            <li><i class="fa-solid fa-check"></i> Profile &amp; Content-Based Backlinks</li>
-            <li><i class="fa-solid fa-check"></i> Core Keyword Ranking Support</li>
-            <li><i class="fa-solid fa-check"></i> Detailed Submission Report (Live Links)</li>
-          </ul>
-          <a href="contact.html" class="btn btn--ghost">Sign Up Now</a>
-        </div>
-        <div class="pricing-card pricing-card--featured">
-          <span class="pricing-card__badge">Most Popular</span>
-          <div class="pricing-card__name">Premium</div>
-          <div class="pricing-card__price">Custom Plan</div>
-          <ul class="pricing-card__list">
-            <li><i class="fa-solid fa-check"></i> 60+ Premium Editorial Backlinks</li>
-            <li><i class="fa-solid fa-check"></i> DA 70+ High-Traffic Sites</li>
-            <li><i class="fa-solid fa-check"></i> 60+ Advanced NAP Citations</li>
-            <li><i class="fa-solid fa-check"></i> 40+ Niche-Specific Directories</li>
-            <li><i class="fa-solid fa-check"></i> Guest Posts &amp; Contextual Backlinks</li>
-            <li><i class="fa-solid fa-check"></i> Competitive Keyword Dominance</li>
-            <li><i class="fa-solid fa-check"></i> Real-Time Live Link Monitoring Report</li>
-          </ul>
-          <a href="contact.html" class="btn btn--primary">Call Now</a>
+  <main>
+    <section class="page-hero" style="background-image:url('assets/images/stock/1524661135-423995f22d0b-w1600.jpg');">
+      <div class="page-hero__scrim"></div>
+      <div class="container">
+        <span class="eyebrow">Citations &amp; Backlinks</span>
+        <h1>Let's Help You Rank Higher Locally with Accurate Citations</h1>
+        <p class="page-hero__lead">Consistent, accurate citations across the web to boost your local visibility.</p>
+        <div class="breadcrumb"><a href="index.html">Home</a> <i class="fa-solid fa-chevron-right"></i>
+          <span>Citations</span>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- CTA Banner -->
-  <section class="cta-banner">
-    <div class="container cta-banner__split">
-      <div class="cta-banner__split-content">
-        <h2>Ready to boost your local SEO and attract more local customers? Let's enhance your online visibility!</h2>
-        <p class="cta-banner__split-text">We're here to help you navigate your digital journey. Get in touch today to discuss how we can take your business to the next level.</p>
-        <div class="cta-banner__split-actions">
-          <a href="contact.html" class="btn btn--primary">Estimate Project <i class="fa-solid fa-arrow-right"></i></a>
-          <a href="about-us.html" class="btn btn--outline-primary">Learn More</a>
+    </section>
+    <section class="section">
+      <div class="container service-intro">
+        <p>Want to be found by local customers? Our citation services ensure your business info is consistent across
+          important directories, helping you stand out in local searches. With accurate and up-to-date citations, we
+          boost your visibility, build credibility, and make it easier for potential customers to find you. Our
+          Professional Citation Services are designed to help businesses stand out in local search results and drive
+          more traffic to their websites.</p>
+      </div>
+    </section>
+    <section class="section section--tint">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">Local SEO</span>
+          <h2>Why Citations Matter for Local SEO</h2>
+        </div>
+        <div class="benefits__grid">
+          <div class="benefit-item">
+            <div class="benefit-item__icon"><i class="fa-solid fa-ranking-star"></i></div>
+            <h3>Improves Local Search Rankings</h3>
+            <p>Consistent citations across directories boost your visibility, helping your business appear higher in
+              local search results.</p>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-item__icon"><i class="fa-solid fa-route"></i></div>
+            <h3>Increases Local Traffic</h3>
+            <p>Correct citations make it easier for customers to find you online or in person, driving more visits to
+              your business.</p>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-item__icon"><i class="fa-solid fa-globe"></i></div>
+            <h3>Enhances Online Presence</h3>
+            <p>Citations ensure your business info is everywhere it needs to be, expanding your digital footprint.</p>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-item__icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3>Builds Trust and Credibility</h3>
+            <p>Accurate citations show search engines your business is trustworthy, improving your reputation.</p>
+          </div>
         </div>
       </div>
-      <div class="cta-banner__collage">
-        <span class="cta-banner__collage-circle"></span>
-        <span class="cta-banner__collage-tri cta-banner__collage-tri--1"></span>
-        <span class="cta-banner__collage-tri cta-banner__collage-tri--2"></span>
-        <span class="cta-banner__collage-dot"></span>
-        <div class="cta-banner__collage-panel cta-banner__collage-panel--1" style="background-image:url('assets/images/stock/1517245386807-bb43f82c33c4-w500.jpg');"></div>
-        <div class="cta-banner__collage-panel cta-banner__collage-panel--2" style="background-image:url('assets/images/stock/1522202176988-66273c2fd55f-w1600.jpg');"></div>
-        <div class="cta-banner__collage-panel cta-banner__collage-panel--3" style="background-image:url('assets/images/stock/1552664730-d307ca884978-w800.jpg');"></div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-</main>
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">Our Process</span>
+          <h2>The Citation Process That Works for You!</h2>
+        </div>
+        <div class="process__grid process__grid--3">
+          <div class="process-step">
+            <div class="process-step__num">1</div>
+            <h3>Business Audit</h3>
+            <p>We begin with a thorough audit of your online presence, identifying any discrepancies in your
+              information.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-step__num">2</div>
+            <h3>Identifying Key Directories</h3>
+            <p>We research and target the most relevant local and industry-specific directories for your business.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-step__num">3</div>
+            <h3>Accurate Submissions</h3>
+            <p>We meticulously submit your business details, making sure your NAP info is 100% consistent.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-step__num">4</div>
+            <h3>Citation Monitoring</h3>
+            <p>We monitor your citations regularly to ensure they remain accurate across the web.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-step__num">5</div>
+            <h3>Ongoing Optimization</h3>
+            <p>We continuously optimize your citations, staying on top of industry trends and algorithm changes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint" id="pricing">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">The Authority Amplifier</span>
+          <h2>Citations Pricing &mdash; Choose Your Best Plan</h2>
+        </div>
+        <div class="pricing__grid pricing__grid--2">
+          <div class="pricing-card">
+            <div class="pricing-card__name">Gold</div>
+            <div class="pricing-card__price">$599<span>/Month</span></div>
+            <ul class="pricing-card__list">
+              <li><i class="fa-solid fa-check"></i> 30+ High-Authority Backlinks</li>
+              <li><i class="fa-solid fa-check"></i> DA 60+ Guaranteed Sites</li>
+              <li><i class="fa-solid fa-check"></i> 30+ High-Quality NAP Citations</li>
+              <li><i class="fa-solid fa-check"></i> 20+ Premium Business Directories</li>
+              <li><i class="fa-solid fa-check"></i> Profile &amp; Content-Based Backlinks</li>
+              <li><i class="fa-solid fa-check"></i> Core Keyword Ranking Support</li>
+              <li><i class="fa-solid fa-check"></i> Detailed Submission Report (Live Links)</li>
+            </ul>
+            <a href="contact.html" class="btn btn--ghost">Sign Up Now</a>
+          </div>
+          <div class="pricing-card pricing-card--featured">
+            <span class="pricing-card__badge">Most Popular</span>
+            <div class="pricing-card__name">Premium</div>
+            <div class="pricing-card__price">Custom Plan</div>
+            <ul class="pricing-card__list">
+              <li><i class="fa-solid fa-check"></i> 60+ Premium Editorial Backlinks</li>
+              <li><i class="fa-solid fa-check"></i> DA 70+ High-Traffic Sites</li>
+              <li><i class="fa-solid fa-check"></i> 60+ Advanced NAP Citations</li>
+              <li><i class="fa-solid fa-check"></i> 40+ Niche-Specific Directories</li>
+              <li><i class="fa-solid fa-check"></i> Guest Posts &amp; Contextual Backlinks</li>
+              <li><i class="fa-solid fa-check"></i> Competitive Keyword Dominance</li>
+              <li><i class="fa-solid fa-check"></i> Real-Time Live Link Monitoring Report</li>
+            </ul>
+            <a href="contact.html" class="btn btn--primary">Call Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+      <div class="container cta-banner__split">
+        <div class="cta-banner__split-content">
+          <h2>Ready to boost your local SEO and attract more local customers? Let's enhance your online visibility!</h2>
+          <p class="cta-banner__split-text">We're here to help you navigate your digital journey. Get in touch today to
+            discuss how we can take your business to the next level.</p>
+          <div class="cta-banner__split-actions">
+            <a href="contact.html" class="btn btn--primary">Estimate Project <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="about-us.html" class="btn btn--outline-primary">Learn More</a>
+          </div>
+        </div>
+        <div class="cta-banner__collage">
+          <span class="cta-banner__collage-circle"></span>
+          <span class="cta-banner__collage-tri cta-banner__collage-tri--1"></span>
+          <span class="cta-banner__collage-tri cta-banner__collage-tri--2"></span>
+          <span class="cta-banner__collage-dot"></span>
+          <div class="cta-banner__collage-panel cta-banner__collage-panel--1"
+            style="background-image:url('assets/images/stock/1517245386807-bb43f82c33c4-w500.jpg');"></div>
+          <div class="cta-banner__collage-panel cta-banner__collage-panel--2"
+            style="background-image:url('assets/images/stock/1522202176988-66273c2fd55f-w1600.jpg');"></div>
+          <div class="cta-banner__collage-panel cta-banner__collage-panel--3"
+            style="background-image:url('assets/images/stock/1552664730-d307ca884978-w800.jpg');"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
 
   <!-- Footer -->
-    <footer class="footer">
+  <footer class="footer">
     <div class="footer__card">
-    <div class="footer__card-bg"></div>
-    <div class="footer__card-tint"></div>
-    <div class="container footer__grid">
-      <div class="footer__brand">
-        <img src="assets/images/logo-full.png" alt="Digi Era Pro LLC" class="footer__logo">
-        <p>Your partner in building a strong online presence with creative, results-focused marketing!</p>
-        <a href="contact.html" class="btn btn--primary btn--sm">Get In Touch <i class="fa-solid fa-arrow-right"></i></a>
-        <div class="footer__social">
-          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
-          <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+      <div class="footer__card-bg"></div>
+      <div class="footer__card-tint"></div>
+      <div class="container footer__grid">
+        <div class="footer__brand">
+          <img src="assets/images/logo-full.png" alt="Digi Era Pro LLC" class="footer__logo">
+          <p>Your partner in building a strong online presence with creative, results-focused marketing!</p>
+          <form class="footer__subscribe-form">
+            <label class="sr-only" for="footerEmail">Email address</label>
+            <div class="footer__subscribe-control">
+              <input type="email" id="footerEmail" name="email" placeholder="Your email address" autocomplete="email"
+                required>
+              <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <p class="footer__subscribe-note" hidden>Thanks! You're subscribed.</p>
+          </form>
+          <div class="footer__social">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <ul class="footer__contact">
+            <li><i class="fa-solid fa-phone"></i>
+              <div><strong>General Inquiries</strong><a href="tel:17866001595">(786) 600-1595</a></div>
+            </li>
+            <li><i class="fa-solid fa-headset"></i>
+              <div><strong>Sales Department</strong><a href="tel:18325217343">(832) 521-7343</a></div>
+            </li>
+            <li><i class="fa-solid fa-envelope"></i>
+              <div><strong>Email Us</strong><a href="mailto:info@digierapro.com">info@digierapro.com</a></div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__col footer__whatsapp">
+          <h4>Follow Our Channel</h4>
+          <p>For the latest updates and news, join our WhatsApp channel.</p>
+          <a href="https://www.whatsapp.com/channel/0029Va9rAuz35fLvhz6FN80z" class="btn btn--primary btn--sm"><i
+              class="fa-brands fa-whatsapp"></i> Join Channel</a>
         </div>
       </div>
 
-      <div class="footer__col">
-        <h4>Explore</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about-us.html">About Us</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="privacy-policy.html">Privacy Policy</a></li>
-        </ul>
-      </div>
-
-      <div class="footer__col">
-        <h4>Contact</h4>
-        <ul class="footer__contact">
-          <li><i class="fa-solid fa-phone"></i>
-            <div><strong>General Inquiries</strong><a href="tel:17866001595">(786) 600-1595</a></div>
-          </li>
-          <li><i class="fa-solid fa-headset"></i>
-            <div><strong>Sales Department</strong><a href="tel:18325217343">(832) 521-7343</a></div>
-          </li>
-          <li><i class="fa-solid fa-envelope"></i>
-            <div><strong>Email Us</strong><a href="mailto:info@digierapro.com">info@digierapro.com</a></div>
-          </li>
-        </ul>
-      </div>
-
-      <div class="footer__col footer__whatsapp">
-        <h4>Follow Our Channel</h4>
-        <p>For the latest updates and news, join our WhatsApp channel.</p>
-        <a href="https://www.whatsapp.com/channel/0029Va9rAuz35fLvhz6FN80z" class="btn btn--primary btn--sm"><i
-            class="fa-brands fa-whatsapp"></i> Join Channel</a>
-      </div>
-    </div>
-
-    <div class="footer__bottom">
-      <div class="container footer__bottom-inner">
-        <span>©2021. All rights reserved by Digi Era Pro LLC</span>
-        <div class="footer__bottom-links">
-          <a href="privacy-policy.html">Privacy Policy</a>
-          <a href="terms-conditions.html">Terms &amp; Conditions</a>
+      <div class="footer__bottom">
+        <div class="container footer__bottom-inner">
+          <span>©2021. All rights reserved by Digi Era Pro LLC</span>
+          <div class="footer__bottom-links">
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms-conditions.html">Terms &amp; Conditions</a>
+          </div>
         </div>
       </div>
-    </div>
     </div>
   </footer>
 
-<a href="tel:17866001595" class="mobile-call-fab" aria-label="Call us"><i class="fa-solid fa-phone"></i></a>
+  <a href="tel:17866001595" class="mobile-call-fab" aria-label="Call us"><i class="fa-solid fa-phone"></i></a>
 
-<script src="js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
+
 </html>

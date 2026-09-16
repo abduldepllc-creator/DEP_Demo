@@ -1,226 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
+  <meta charset="UTF-8">
   <script>
-(function () {
-  try {
-    var stored = localStorage.getItem('digierapro-theme');
-    var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-    document.documentElement.setAttribute('data-theme', theme);
-  } catch (e) {}
-})();
+    (function () {
+      try {
+        var stored = localStorage.getItem('digierapro-theme');
+        var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) { }
+    })();
   </script>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>App Development Services | Digi Era Pro LLC</title>
-<meta name="description" content="Build your smart apps for smart businesses. Intuitive, engaging, end-to-end app development from Digi Era Pro.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App Development Services | Digi Era Pro LLC</title>
+  <meta name="description"
+    content="Build your smart apps for smart businesses. Intuitive, engaging, end-to-end app development from Digi Era Pro.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<!-- Top Bar -->
-<div class="topbar">
-  <div class="container topbar__inner">
-    <div class="topbar__left">
-      <span><i class="fa-regular fa-clock"></i> 9:00 AM – 5:00 PM EST</span>
-      <span><i class="fa-solid fa-envelope"></i> info@digierapro.com</span>
-    </div>
-    <div class="topbar__right">
-      <span class="topbar__badges">Partner With: Google Partners &middot; Meta Business Partner &middot; Trustpilot</span>
-      <a href="tel:17866001595"><i class="fa-solid fa-phone"></i> (786) 600-1595</a>
+  <!-- Top Bar -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__left">
+        <span><i class="fa-regular fa-clock"></i> 9:00 AM – 5:00 PM EST</span>
+        <span><i class="fa-solid fa-envelope"></i> info@digierapro.com</span>
+      </div>
+      <div class="topbar__right">
+        <span class="topbar__badges">Partner With: Google Partners &middot; Meta Business Partner &middot;
+          Trustpilot</span>
+        <a href="tel:17866001595"><i class="fa-solid fa-phone"></i> (786) 600-1595</a>
+      </div>
     </div>
   </div>
-</div>
 
-<!-- Header -->
-<header class="header" id="header">
-  <div class="container header__inner">
-    <a href="index.html" class="header__logo">
-      <img src="assets/images/logo-wordmark.png" alt="Digi Era Pro LLC">
-    </a>
-    <nav class="nav" id="nav">
-      <ul class="nav__list">
-        <li><a href="index.html">Home</a></li>
-        <li class="has-dropdown">
-          <a href="services.html">Services <i class="fa-solid fa-chevron-down"></i></a>
-          <ul class="dropdown">
-            <li><a href="google-my-business-optimization.html">GBP Optimization</a></li>
-            <li><a href="landing-page-website.html">Landing Page Website</a></li>
-            <li><a href="web-development.html">Web Development</a></li>
-            <li><a href="search-engine-optimization.html">Search Engine Optimization</a></li>
-            <li><a href="social-media-marketing.html">Social Media Marketing</a></li>
-            <li><a href="google-ads.html">Google Ads</a></li>
-            <li><a href="citations.html">Citations &amp; Backlinks</a></li>
-            <li><a href="branding.html">Branding</a></li>
-            <li><a href="graphic-designing.html">Graphic Designing</a></li>
-            <li><a href="reviews.html">Reviews</a></li>
-            <li><a href="amazon.html">Amazon</a></li>
-            <li><a href="games.html">Games</a></li>
-            <li><a href="apps.html" class="active">Apps</a></li>
-            <li><a href="ecommerce.html">Ecommerce</a></li>
-            <li><a href="software.html">Software</a></li>
-            <li><a href="virtual-ai-solutions.html">Virtual AI Solution</a></li>
-          </ul>
-        </li>
-        <li><a href="about-us.html">About Us</a></li>
-        <li><a href="google-my-business-optimization.html">Special Offer</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="header__actions">
-      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
-        <i class="fa-solid fa-sun theme-toggle__icon theme-toggle__icon--sun"></i>
-        <i class="fa-solid fa-moon theme-toggle__icon theme-toggle__icon--moon"></i>
-      </button>
-      <a href="contact.html" class="btn btn--primary">Contact With Us</a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <img src="assets/images/logo-wordmark.png" alt="Digi Era Pro LLC">
+      </a>
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="index.html">Home</a></li>
+          <li class="has-dropdown">
+            <a href="services.html">Services <i class="fa-solid fa-chevron-down"></i></a>
+            <ul class="dropdown">
+              <li><a href="google-my-business-optimization.html">GBP Optimization</a></li>
+              <li><a href="landing-page-website.html">Landing Page Website</a></li>
+              <li><a href="web-development.html">Web Development</a></li>
+              <li><a href="search-engine-optimization.html">Search Engine Optimization</a></li>
+              <li><a href="social-media-marketing.html">Social Media Marketing</a></li>
+              <li><a href="google-ads.html">Google Ads</a></li>
+              <li><a href="citations.html">Citations &amp; Backlinks</a></li>
+              <li><a href="branding.html">Branding</a></li>
+              <li><a href="graphic-designing.html">Graphic Designing</a></li>
+              <li><a href="reviews.html">Reviews</a></li>
+              <li><a href="amazon.html">Amazon</a></li>
+              <li><a href="games.html">Games</a></li>
+              <li><a href="apps.html" class="active">Apps</a></li>
+              <li><a href="ecommerce.html">Ecommerce</a></li>
+              <li><a href="software.html">Software</a></li>
+              <li><a href="virtual-ai-solutions.html">Virtual AI Solution</a></li>
+            </ul>
+          </li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="google-my-business-optimization.html">Special Offer</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+          <i class="fa-solid fa-sun theme-toggle__icon theme-toggle__icon--sun"></i>
+          <i class="fa-solid fa-moon theme-toggle__icon theme-toggle__icon--moon"></i>
+        </button>
+        <a href="contact.html" class="btn btn--primary">Contact With Us</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
-  </div>
-</header>
-<div class="nav-overlay" id="navOverlay"></div>
+  </header>
+  <div class="nav-overlay" id="navOverlay"></div>
 
-<main>
-  <section class="page-hero" style="background-image:url('assets/images/stock/1512941937669-90a1b58e7e9c-w1600.jpg');">
-    <div class="page-hero__scrim"></div>
-    <div class="container">
-      <span class="eyebrow">Apps</span>
-      <h1>Build Your Smart Apps for Smart Businesses</h1>
-      <p class="page-hero__lead">Let's Create Apps That Users Love.</p>
-      <div class="breadcrumb"><a href="index.html">Home</a> <i class="fa-solid fa-chevron-right"></i> <span>Apps</span></div>
-    </div>
-  </section>
-  <section class="section">
-    <div class="container service-intro">
-      <p>We believe that the best apps aren't just functional&mdash;they're intuitive, engaging, and memorable. Whether you're building a brand-new app or looking to enhance an existing one, we're here to help you create an app that your users will love. Our team combines advanced technology with creative design to deliver user-friendly experiences that keep your audience coming back for more.</p>
-    </div>
-  </section>
-  <section class="section section--tint">
-    <div class="container">
-      <div class="section__head">
-        <span class="eyebrow">Why Choose Us</span>
-        <h2>What Makes Digi Era Pro the Right Choice for You?</h2>
-      </div>
-      <div class="benefits__grid">
-        <div class="benefit-item"><div class="benefit-item__icon"><i class="fa-solid fa-sliders"></i></div><h3>Custom Solutions</h3><p>We develop apps that are unique to your business needs.</p></div>
-        <div class="benefit-item"><div class="benefit-item__icon"><i class="fa-solid fa-hand-pointer"></i></div><h3>User-Friendly Designs</h3><p>Our apps offer intuitive and engaging user experiences.</p></div>
-        <div class="benefit-item"><div class="benefit-item__icon"><i class="fa-solid fa-microchip"></i></div><h3>Advance Technology</h3><p>We use the latest tools and technologies to ensure top performance.</p></div>
-        <div class="benefit-item"><div class="benefit-item__icon"><i class="fa-solid fa-flag-checkered"></i></div><h3>End-to-End Service</h3><p>From planning to deployment, we handle every aspect of app development.</p></div>
-        <div class="benefit-item"><div class="benefit-item__icon"><i class="fa-solid fa-life-ring"></i></div><h3>Dedicated Support</h3><p>Our team provides ongoing support and maintenance to keep your app running smoothly.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="section__head">
-        <span class="eyebrow">Get Started Today!</span>
-        <h2>Building Your Dream App is Just a Few Steps Away</h2>
-      </div>
-      <div class="process__grid process__grid--3">
-        <div class="process-step"><div class="process-step__num">1</div><h3>Share Your Vision</h3><p>Tell us about your idea, goals, and target audience&mdash;we'll handle the rest.</p></div>
-        <div class="process-step"><div class="process-step__num">2</div><h3>Plan &amp; Design</h3><p>Collaborate with our team to create a strategy and design that fits your needs.</p></div>
-        <div class="process-step"><div class="process-step__num">3</div><h3>Launch with Confidence</h3><p>Watch your app come to life with a smooth launch and ongoing support.</p></div>
-      </div>
-    </div>
-  </section>
-  <!-- CTA Banner -->
-  <section class="cta-banner">
-    <div class="container cta-banner__split">
-      <div class="cta-banner__split-content">
-        <h2>Partner with Digi Era Pro for reliable, high-quality App Development Services. Contact us now to discuss your project.</h2>
-        <p class="cta-banner__split-text">We're here to help you navigate your digital journey. Get in touch today to discuss how we can take your business to the next level.</p>
-        <div class="cta-banner__split-actions">
-          <a href="contact.html" class="btn btn--primary">Let's Chat <i class="fa-solid fa-arrow-right"></i></a>
-          <a href="about-us.html" class="btn btn--outline-primary">Learn More</a>
+  <main>
+    <section class="page-hero"
+      style="background-image:url('assets/images/stock/1512941937669-90a1b58e7e9c-w1600.jpg');">
+      <div class="page-hero__scrim"></div>
+      <div class="container">
+        <span class="eyebrow">Apps</span>
+        <h1>Build Your Smart Apps for Smart Businesses</h1>
+        <p class="page-hero__lead">Let's Create Apps That Users Love.</p>
+        <div class="breadcrumb"><a href="index.html">Home</a> <i class="fa-solid fa-chevron-right"></i>
+          <span>Apps</span>
         </div>
       </div>
-      <div class="cta-banner__collage">
-        <span class="cta-banner__collage-circle"></span>
-        <span class="cta-banner__collage-tri cta-banner__collage-tri--1"></span>
-        <span class="cta-banner__collage-tri cta-banner__collage-tri--2"></span>
-        <span class="cta-banner__collage-dot"></span>
-        <div class="cta-banner__collage-panel cta-banner__collage-panel--1" style="background-image:url('assets/images/stock/1517245386807-bb43f82c33c4-w500.jpg');"></div>
-        <div class="cta-banner__collage-panel cta-banner__collage-panel--2" style="background-image:url('assets/images/stock/1522202176988-66273c2fd55f-w1600.jpg');"></div>
-        <div class="cta-banner__collage-panel cta-banner__collage-panel--3" style="background-image:url('assets/images/stock/1552664730-d307ca884978-w800.jpg');"></div>
+    </section>
+    <section class="section">
+      <div class="container service-intro">
+        <p>We believe that the best apps aren't just functional&mdash;they're intuitive, engaging, and memorable.
+          Whether you're building a brand-new app or looking to enhance an existing one, we're here to help you create
+          an app that your users will love. Our team combines advanced technology with creative design to deliver
+          user-friendly experiences that keep your audience coming back for more.</p>
       </div>
-    </div>
-  </section>
+    </section>
+    <section class="section section--tint">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">Why Choose Us</span>
+          <h2>What Makes Digi Era Pro the Right Choice for You?</h2>
+        </div>
+        <div class="benefits__grid">
+          <div class="benefit-item">
+            <div class="benefit-item__icon"><i class="fa-solid fa-sliders"></i></div>
+            <h3>Custom Solutions</h3>
+            <p>We develop apps that are unique to your business needs.</p>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-item__icon"><i class="fa-solid fa-hand-pointer"></i></div>
+            <h3>User-Friendly Designs</h3>
+            <p>Our apps offer intuitive and engaging user experiences.</p>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-item__icon"><i class="fa-solid fa-microchip"></i></div>
+            <h3>Advance Technology</h3>
+            <p>We use the latest tools and technologies to ensure top performance.</p>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-item__icon"><i class="fa-solid fa-flag-checkered"></i></div>
+            <h3>End-to-End Service</h3>
+            <p>From planning to deployment, we handle every aspect of app development.</p>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-item__icon"><i class="fa-solid fa-life-ring"></i></div>
+            <h3>Dedicated Support</h3>
+            <p>Our team provides ongoing support and maintenance to keep your app running smoothly.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-</main>
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">Get Started Today!</span>
+          <h2>Building Your Dream App is Just a Few Steps Away</h2>
+        </div>
+        <div class="process__grid process__grid--3">
+          <div class="process-step">
+            <div class="process-step__num">1</div>
+            <h3>Share Your Vision</h3>
+            <p>Tell us about your idea, goals, and target audience&mdash;we'll handle the rest.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-step__num">2</div>
+            <h3>Plan &amp; Design</h3>
+            <p>Collaborate with our team to create a strategy and design that fits your needs.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-step__num">3</div>
+            <h3>Launch with Confidence</h3>
+            <p>Watch your app come to life with a smooth launch and ongoing support.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+      <div class="container cta-banner__split">
+        <div class="cta-banner__split-content">
+          <h2>Partner with Digi Era Pro for reliable, high-quality App Development Services. Contact us now to discuss
+            your project.</h2>
+          <p class="cta-banner__split-text">We're here to help you navigate your digital journey. Get in touch today to
+            discuss how we can take your business to the next level.</p>
+          <div class="cta-banner__split-actions">
+            <a href="contact.html" class="btn btn--primary">Let's Chat <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="about-us.html" class="btn btn--outline-primary">Learn More</a>
+          </div>
+        </div>
+        <div class="cta-banner__collage">
+          <span class="cta-banner__collage-circle"></span>
+          <span class="cta-banner__collage-tri cta-banner__collage-tri--1"></span>
+          <span class="cta-banner__collage-tri cta-banner__collage-tri--2"></span>
+          <span class="cta-banner__collage-dot"></span>
+          <div class="cta-banner__collage-panel cta-banner__collage-panel--1"
+            style="background-image:url('assets/images/stock/1517245386807-bb43f82c33c4-w500.jpg');"></div>
+          <div class="cta-banner__collage-panel cta-banner__collage-panel--2"
+            style="background-image:url('assets/images/stock/1522202176988-66273c2fd55f-w1600.jpg');"></div>
+          <div class="cta-banner__collage-panel cta-banner__collage-panel--3"
+            style="background-image:url('assets/images/stock/1552664730-d307ca884978-w800.jpg');"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
 
   <!-- Footer -->
-    <footer class="footer">
+  <footer class="footer">
     <div class="footer__card">
-    <div class="footer__card-bg"></div>
-    <div class="footer__card-tint"></div>
-    <div class="container footer__grid">
-      <div class="footer__brand">
-        <img src="assets/images/logo-full.png" alt="Digi Era Pro LLC" class="footer__logo">
-        <p>Your partner in building a strong online presence with creative, results-focused marketing!</p>
-        <a href="contact.html" class="btn btn--primary btn--sm">Get In Touch <i class="fa-solid fa-arrow-right"></i></a>
-        <div class="footer__social">
-          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
-          <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+      <div class="footer__card-bg"></div>
+      <div class="footer__card-tint"></div>
+      <div class="container footer__grid">
+        <div class="footer__brand">
+          <img src="assets/images/logo-full.png" alt="Digi Era Pro LLC" class="footer__logo">
+          <p>Your partner in building a strong online presence with creative, results-focused marketing!</p>
+          <form class="footer__subscribe-form">
+            <label class="sr-only" for="footerEmail">Email address</label>
+            <div class="footer__subscribe-control">
+              <input type="email" id="footerEmail" name="email" placeholder="Your email address" autocomplete="email"
+                required>
+              <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <p class="footer__subscribe-note" hidden>Thanks! You're subscribed.</p>
+          </form>
+          <div class="footer__social">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <ul class="footer__contact">
+            <li><i class="fa-solid fa-phone"></i>
+              <div><strong>General Inquiries</strong><a href="tel:17866001595">(786) 600-1595</a></div>
+            </li>
+            <li><i class="fa-solid fa-headset"></i>
+              <div><strong>Sales Department</strong><a href="tel:18325217343">(832) 521-7343</a></div>
+            </li>
+            <li><i class="fa-solid fa-envelope"></i>
+              <div><strong>Email Us</strong><a href="mailto:info@digierapro.com">info@digierapro.com</a></div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__col footer__whatsapp">
+          <h4>Follow Our Channel</h4>
+          <p>For the latest updates and news, join our WhatsApp channel.</p>
+          <a href="https://www.whatsapp.com/channel/0029Va9rAuz35fLvhz6FN80z" class="btn btn--primary btn--sm"><i
+              class="fa-brands fa-whatsapp"></i> Join Channel</a>
         </div>
       </div>
 
-      <div class="footer__col">
-        <h4>Explore</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about-us.html">About Us</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="privacy-policy.html">Privacy Policy</a></li>
-        </ul>
-      </div>
-
-      <div class="footer__col">
-        <h4>Contact</h4>
-        <ul class="footer__contact">
-          <li><i class="fa-solid fa-phone"></i>
-            <div><strong>General Inquiries</strong><a href="tel:17866001595">(786) 600-1595</a></div>
-          </li>
-          <li><i class="fa-solid fa-headset"></i>
-            <div><strong>Sales Department</strong><a href="tel:18325217343">(832) 521-7343</a></div>
-          </li>
-          <li><i class="fa-solid fa-envelope"></i>
-            <div><strong>Email Us</strong><a href="mailto:info@digierapro.com">info@digierapro.com</a></div>
-          </li>
-        </ul>
-      </div>
-
-      <div class="footer__col footer__whatsapp">
-        <h4>Follow Our Channel</h4>
-        <p>For the latest updates and news, join our WhatsApp channel.</p>
-        <a href="https://www.whatsapp.com/channel/0029Va9rAuz35fLvhz6FN80z" class="btn btn--primary btn--sm"><i
-            class="fa-brands fa-whatsapp"></i> Join Channel</a>
-      </div>
-    </div>
-
-    <div class="footer__bottom">
-      <div class="container footer__bottom-inner">
-        <span>©2021. All rights reserved by Digi Era Pro LLC</span>
-        <div class="footer__bottom-links">
-          <a href="privacy-policy.html">Privacy Policy</a>
-          <a href="terms-conditions.html">Terms &amp; Conditions</a>
+      <div class="footer__bottom">
+        <div class="container footer__bottom-inner">
+          <span>©2021. All rights reserved by Digi Era Pro LLC</span>
+          <div class="footer__bottom-links">
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms-conditions.html">Terms &amp; Conditions</a>
+          </div>
         </div>
       </div>
-    </div>
     </div>
   </footer>
 
-<a href="tel:17866001595" class="mobile-call-fab" aria-label="Call us"><i class="fa-solid fa-phone"></i></a>
+  <a href="tel:17866001595" class="mobile-call-fab" aria-label="Call us"><i class="fa-solid fa-phone"></i></a>
 
-<script src="js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
+
 </html>
