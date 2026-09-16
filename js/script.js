@@ -6,6 +6,28 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+  /* ---------- Shared helper: "draw-in" animated line-icon SVGs ----------
+     Measures each path/circle/rect's real outline length and animates
+     stroke-dashoffset from that length down to 0, so the icon appears to
+     draw itself. Safe to call repeatedly (e.g. on every tab switch). */
+  function drawSvgIconsIn(container) {
+    if (!container) return;
+    var shapes = container.querySelectorAll('.why-us__svg-icon path, .why-us__svg-icon circle, .feature-row__svg-icon path, .feature-row__svg-icon circle, .feature-row__svg-icon rect');
+    shapes.forEach(function (shape) {
+      var length = shape.getTotalLength();
+      shape.style.transition = 'none';
+      shape.style.strokeDasharray = length;
+      shape.style.strokeDashoffset = length;
+      void shape.getBoundingClientRect(); // force reflow so the reset above actually applies
+      shape.style.transition = '';
+      if (prefersReducedMotion) {
+        shape.style.strokeDashoffset = 0;
+      } else {
+        requestAnimationFrame(function () { shape.style.strokeDashoffset = 0; });
+      }
+    });
+  }
+
   /* ---------- Theme Toggle (light/dark, persisted via localStorage) ----------
      The <html> element's data-theme attribute is already set as early as possible by an
      inline script in <head> (before this file even loads) to avoid a flash of the wrong
@@ -173,7 +195,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function setWhyUsTab(index) {
       whyUsTabs.forEach(function (tab) { tab.classList.toggle('is-active', tab.getAttribute('data-tab') === String(index)); });
-      whyUsItems.forEach(function (item) { item.classList.toggle('is-active', item.getAttribute('data-panel') === String(index)); });
+      whyUsItems.forEach(function (item) {
+        var isActive = item.getAttribute('data-panel') === String(index);
+        item.classList.toggle('is-active', isActive);
+        if (isActive) drawSvgIconsIn(item);
+      });
     }
 
     function startWhyUsAutoRotate() {
@@ -194,6 +220,38 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     startWhyUsAutoRotate();
+
+    // Draw the first (already-active) icon once the panel actually scrolls into view,
+    // rather than immediately on load while it's still off-screen below the fold.
+    if ('IntersectionObserver' in window) {
+      var whyUsIconObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            drawSvgIconsIn(whyUsPanel.querySelector('.why-us__panel-item.is-active'));
+            whyUsIconObserver.disconnect();
+          }
+        });
+      }, { threshold: 0.4 });
+      whyUsIconObserver.observe(whyUsPanel);
+    } else {
+      drawSvgIconsIn(whyUsPanel.querySelector('.why-us__panel-item.is-active'));
+    }
+  }
+
+  /* ---------- Feature row moving SVG icons: draw in as each row scrolls into view ---------- */
+  var featureRows = document.querySelectorAll('.feature-row');
+  if (featureRows.length && 'IntersectionObserver' in window) {
+    var featureIconObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          drawSvgIconsIn(entry.target);
+          featureIconObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.4 });
+    featureRows.forEach(function (row) { featureIconObserver.observe(row); });
+  } else {
+    featureRows.forEach(function (row) { drawSvgIconsIn(row); });
   }
 
   /* ---------- Animated Counters ---------- */
