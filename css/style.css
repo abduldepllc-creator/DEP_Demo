@@ -24,8 +24,8 @@
   --gradient-primary: linear-gradient(135deg, #C8367C 0%, #a12a63 100%);
   --gradient-accent: linear-gradient(135deg, #605BE5 0%, #C8367C 100%);
 
-  --font-heading: Helvetica, sans-serif;
-  --font-body: 'Lato', sans-serif;
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Manrope', sans-serif;
 
   --container-width: 1360px;
   --radius-sm: 8px;
@@ -2835,13 +2835,13 @@ p {
 
 .love-it__float-body strong {
   font-family: var(--font-heading);
-  font-size: 20px;
+  font-size: 28px;
   font-weight: 700;
   color: var(--color-dark);
 }
 
 .love-it__float-body span {
-  font-size: 11px;
+  font-size: 15px;
   color: var(--color-text-light);
   white-space: nowrap;
 }
@@ -5971,11 +5971,11 @@ p {
   }
 
   .love-it__float-body strong {
-    font-size: 16px;
+    font-size: 23px;
   }
 
   .love-it__float-body span {
-    font-size: 10px;
+    font-size: 13px;
   }
 
   .love-it__stamp {
