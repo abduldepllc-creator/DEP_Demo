@@ -1516,7 +1516,7 @@ p {
 }
 
 /* Keep the final slide inside shorter laptop viewports. */
-@media (min-width: 961px) and (max-height: 820px) {
+@media (min-width: 961px) and (max-height: 900px) {
   .hero-slider {
     min-height: 0;
   }
@@ -1679,8 +1679,7 @@ p {
 .trust-strip__inner {
   display: flex;
   align-items: center;
-  gap: 28px;
-  padding: 0 40px;
+  padding: 0 70px;
 }
 
 .trust-strip__label {
@@ -1694,7 +1693,7 @@ p {
 }
 
 .trust-strip__marquee {
-  flex: 1;
+  width: 100%;
   overflow: hidden;
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
   mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
@@ -1702,7 +1701,8 @@ p {
 
 .trust-strip__logos {
   display: flex;
-  gap: 46px;
+  align-items: center;
+  gap: 36px;
   width: max-content;
   animation: marquee 22s linear infinite;
 }
@@ -1711,19 +1711,152 @@ p {
   animation-play-state: paused;
 }
 
-.trust-strip__logos span {
+.trust-strip__logos>span {
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-weight: 600;
-  color: var(--color-heading);
-  font-size: 14.5px;
   white-space: nowrap;
 }
 
-.trust-strip__logos i {
+.trust-logo {
+  width: 125px;
+  height: 75px;
+  flex: 0 0 125px;
+  justify-content: center;
+}
+
+.trust-logo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.trust-badge {
+  position: relative;
+  min-width: 148px;
+  height: 64px;
+  justify-content: center;
+  padding: 8px 14px;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  background: var(--color-white);
+  color: var(--color-heading);
+  box-shadow: 0 5px 14px rgba(41, 44, 49, 0.08);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.trust-badge:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.trust-badge img {
+  width: 116px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.trust-badge i {
+  flex-shrink: 0;
+  font-size: 24px;
+}
+
+.trust-badge strong,
+.trust-badge small {
+  display: block;
+  line-height: 1.05;
+}
+
+.trust-badge strong {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.trust-badge small {
+  margin-top: 5px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.trust-badge--google {
+  min-width: 116px;
+  padding: 5px 8px;
+}
+
+.trust-badge--yelp {
+  color: #d32323;
+}
+
+.trust-badge--yelp i {
+  font-size: 26px;
+}
+
+.trust-badge--yelp strong {
+  color: #171717;
+  font-size: 21px;
+}
+
+.trust-badge--yelp small {
+  color: #c43a2a;
+}
+
+.trust-badge--meta {
+  color: #087bea;
+}
+
+.trust-badge--meta i {
+  font-size: 28px;
+}
+
+.trust-badge--meta strong {
+  color: #151922;
+  font-size: 21px;
+}
+
+.trust-badge--meta small {
+  color: #38404d;
+}
+
+.trust-badge--trustpilot {
+  flex-wrap: wrap;
+  column-gap: 7px;
+  color: #00b67a;
+}
+
+.trust-badge--trustpilot i {
+  font-size: 22px;
+}
+
+.trust-badge--trustpilot strong {
+  font-size: 16px;
+}
+
+.trust-badge--trustpilot small {
+  flex-basis: 100%;
+  margin-top: -2px;
+  letter-spacing: 1px;
+}
+
+.trust-badge--ssl {
+  color: #18334a;
+}
+
+.trust-badge--ssl i {
+  color: #18334a;
+}
+
+.trust-badge--ssl small {
+  color: #d9ae29;
+}
+
+.trust-badge--bes {
   color: var(--color-primary);
-  font-size: 18px;
+}
+
+.trust-badge--bes small {
+  color: var(--color-text-light);
 }
 
 @keyframes marquee {
@@ -1743,6 +1876,10 @@ p {
   position: relative;
   overflow: hidden;
   background: linear-gradient(180deg, #fdf7fa 0%, #ffffff 45%);
+}
+
+.services.section {
+  padding-top: 24px;
 }
 
 .services::before,
@@ -1870,6 +2007,32 @@ p {
 
 .service-card--dark:hover {
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+}
+
+.service-card--seo .service-card__list i,
+.service-card--seo .service-card__link {
+  color: var(--color-primary);
+}
+
+.service-card--seo .service-card__list i {
+  background: rgba(200, 54, 124, 0.16);
+}
+
+.service-card--seo .service-card__link::after {
+  background: var(--color-primary);
+}
+
+.service-card--ppc .service-card__list i,
+.service-card--ppc .service-card__link {
+  color: var(--color-primary);
+}
+
+.service-card--ppc .service-card__list i {
+  background: rgba(200, 54, 124, 0.16);
+}
+
+.service-card--ppc .service-card__link::after {
+  background: var(--color-primary);
 }
 
 .service-card::before {
@@ -2030,6 +2193,98 @@ p {
 
 .service-card__link:hover::after {
   width: 100%;
+}
+
+/* Compact the services overview so the full four-card row fits on laptop screens. */
+@media (min-width: 961px) and (max-height: 820px) {
+  .services.section {
+    padding: 54px 0 60px;
+  }
+
+  .services .section__head {
+    margin-bottom: 28px;
+  }
+
+  .services .section__head .eyebrow {
+    margin-bottom: 8px;
+    font-size: 11px;
+  }
+
+  .services .section__head h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  .services .section__head p {
+    max-width: 760px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .services__grid {
+    gap: 16px;
+  }
+
+  .services .service-card {
+    padding: 24px 18px 20px;
+  }
+
+  .services .service-card:nth-child(even) {
+    margin-top: 14px;
+  }
+
+  .services .service-card__icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 14px;
+    border-radius: 13px;
+  }
+
+  .services .service-card__icon i {
+    font-size: 20px;
+  }
+
+  .services .service-card__num {
+    top: 20px;
+    right: 18px;
+    font-size: 30px;
+  }
+
+  .services .service-card h3 {
+    font-size: 17px;
+    margin-bottom: 8px;
+  }
+
+  .services .service-card p {
+    font-size: 12px;
+    line-height: 1.45;
+    margin-bottom: 12px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
+  }
+
+  .services .service-card__list {
+    margin-bottom: 14px;
+  }
+
+  .services .service-card__list li {
+    gap: 7px;
+    font-size: 11px;
+    padding: 3px 0;
+  }
+
+  .services .service-card__list i {
+    width: 15px;
+    height: 15px;
+    font-size: 8px;
+  }
+
+  .services .service-card__link {
+    gap: 6px;
+    font-size: 12px;
+  }
 }
 
 /* ============================================
@@ -3156,7 +3411,7 @@ p {
 }
 
 .stat-banner__head .eyebrow--light {
-  color: var(--color-gold);
+  color: var(--color-primary);
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -3216,7 +3471,7 @@ p {
   border-radius: 50%;
   background: linear-gradient(145deg, rgba(254, 196, 45, 0.2), rgba(200, 54, 124, 0.28));
   border: 1px solid rgba(254, 196, 45, 0.55);
-  color: var(--color-gold);
+  color: var(--color-primary);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3242,7 +3497,7 @@ p {
   font-family: var(--font-heading);
   font-weight: 700;
   font-size: 24px;
-  color: var(--color-primary);
+  color: #f06a9f;
 }
 
 .stat-banner__label {
@@ -5968,6 +6223,12 @@ p {
 
 [data-theme="dark"] .faq__skill-label {
   color: #c6c1cf;
+}
+
+[data-theme="dark"] .trust-badge {
+  background: #f8f8fa;
+  border-color: rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.24);
 }
 
 [data-theme="dark"] .love-it .checklist li {
