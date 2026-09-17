@@ -1789,6 +1789,298 @@ p {
   }
 }
 
+/* Fit the desktop slider cleanly inside compact 1024px laptop viewports. */
+@media (min-width: 961px) and (max-width: 1100px) and (max-height: 700px) {
+  .hero-slider {
+    min-height: 0;
+  }
+
+  .hero-slide {
+    padding: 0 42px;
+  }
+
+  .hero-slide__inner {
+    gap: 34px;
+  }
+
+  .hero-slide__eyebrow {
+    margin-bottom: 12px;
+    font-size: 12px;
+  }
+
+  .hero-slide__title {
+    font-size: 48px;
+    margin-bottom: 16px;
+  }
+
+  .hero-slide__text {
+    max-width: 470px;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 18px;
+  }
+
+  .hero-slide__tags {
+    gap: 7px;
+    margin-bottom: 18px;
+  }
+
+  .hero-slide__tags span {
+    padding: 5px 11px;
+    font-size: 11px;
+  }
+
+  .hero-slide__cta {
+    gap: 10px;
+  }
+
+  .hero-slide__cta .btn {
+    padding: 12px 18px;
+    font-size: 13px;
+  }
+
+  .hero-slide__visual {
+    height: 330px;
+  }
+
+  .hero-slider__counter,
+  .hero-slider__scroll-hint {
+    bottom: 22px;
+  }
+
+  .hero-slider__social {
+    right: 24px;
+    gap: 16px;
+  }
+
+  .features.section {
+    padding: 34px 0 40px;
+  }
+
+  .features__layout {
+    gap: 24px;
+  }
+
+  .features__intro {
+    padding-top: 0;
+  }
+
+  .features__intro .eyebrow {
+    margin-bottom: 8px;
+    font-size: 11px;
+  }
+
+  .features__intro h2 {
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+
+  .features__intro p {
+    max-width: 390px;
+    margin-bottom: 16px;
+    font-size: 13px;
+    line-height: 1.45;
+  }
+
+  .features__intro .btn {
+    padding: 11px 18px;
+    font-size: 13px;
+  }
+
+  .features__intro-stat {
+    gap: 12px;
+    margin-top: 22px;
+    padding-top: 16px;
+  }
+
+  .features__intro-stat-icon {
+    width: 44px;
+    height: 44px;
+    font-size: 15px;
+  }
+
+  .features__intro-stat-body strong {
+    font-size: 27px;
+  }
+
+  .features__intro-stat-body span {
+    font-size: 11px;
+  }
+
+  .features__list {
+    gap: 10px;
+  }
+
+  .feature-row {
+    gap: 12px;
+    padding: 14px 16px 14px 18px;
+  }
+
+  .feature-row--offset {
+    margin-left: 18px;
+  }
+
+  .feature-row__ghost {
+    top: -12px;
+    right: 10px;
+    font-size: 56px;
+  }
+
+  .feature-row__icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    font-size: 16px;
+  }
+
+  .feature-row__body h3 {
+    margin-bottom: 4px;
+    font-size: 15px;
+  }
+
+  .feature-row__body p {
+    margin-bottom: 6px;
+    font-size: 11.5px;
+    line-height: 1.3;
+  }
+
+  .feature-row__underline {
+    width: 30px;
+  }
+
+  .love-it.section {
+    padding: 30px 0 40px;
+  }
+
+  .love-it__inner {
+    gap: 28px;
+  }
+
+  .love-it__visual {
+    padding: 10px 24px 28px 0;
+  }
+
+  .love-it__photo img {
+    height: 300px;
+  }
+
+  .love-it__stamp {
+    top: -2px;
+    left: 0;
+    width: 68px;
+    height: 68px;
+  }
+
+  .love-it__stamp span {
+    font-size: 8px;
+  }
+
+  .love-it__stamp strong {
+    font-size: 16px;
+  }
+
+  .love-it__float {
+    gap: 8px;
+    padding: 9px 12px;
+    border-radius: 11px;
+  }
+
+  .love-it__float--top {
+    top: 18px;
+    right: -2px;
+  }
+
+  .love-it__float--bottom {
+    bottom: 0;
+    left: -16px;
+  }
+
+  .love-it__float-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 13px;
+  }
+
+  .love-it__float-body strong {
+    font-size: 20px;
+  }
+
+  .love-it__float-body span {
+    font-size: 12px;
+  }
+
+  .love-it h2 {
+    margin-bottom: 10px;
+    font-size: 32px;
+  }
+
+  .love-it__content p {
+    font-size: 13px;
+    line-height: 1.45;
+  }
+
+  .love-it__highlight {
+    font-size: 15px;
+    line-height: 1.4;
+    margin-bottom: 9px;
+  }
+
+  .love-it .checklist {
+    gap: 6px;
+    margin-bottom: 14px;
+  }
+
+  .love-it .checklist li {
+    gap: 8px;
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+
+  .checklist i {
+    width: 22px;
+    height: 22px;
+    font-size: 11px;
+  }
+
+  .love-it__mini-stats {
+    gap: 10px;
+    margin: 10px 0 10px;
+  }
+
+  .love-it__mini-stat {
+    min-height: 54px;
+    gap: 8px;
+    padding: 7px 9px;
+    border-radius: 10px;
+  }
+
+  .love-it__mini-stat i {
+    width: 26px;
+    height: 26px;
+    border-radius: 8px;
+    font-size: 11px;
+  }
+
+  .love-it__mini-stat strong,
+  .love-it__mini-stat .stat-box__num {
+    font-size: 24px;
+  }
+
+  .love-it__mini-stat .mini-stat-plus {
+    font-size: 13px;
+  }
+
+  .love-it__mini-stat span {
+    font-size: 9px;
+    line-height: 1.15;
+  }
+
+  .love-it__content > .btn {
+    padding: 10px 16px;
+    font-size: 12px;
+  }
+}
+
 /* Reduced motion + mobile: static stacked fallback (no scroll-hijack, no absolute overlap) */
 @media (max-width: 960px),
 (prefers-reduced-motion: reduce) {
@@ -2281,6 +2573,102 @@ p {
 
   .who-we-are__content .who-we-are__lead {
     font-size: 16.5px;
+  }
+}
+
+/* Keep Who We Are fully visible in the compact 1024x650 laptop viewport. */
+@media (min-width: 961px) and (max-width: 1100px) and (max-height: 700px) {
+  .who-we-are {
+    padding: 24px 0 34px;
+  }
+
+  .who-we-are__heading {
+    margin-bottom: 14px;
+  }
+
+  .who-we-are__heading .eyebrow {
+    font-size: 28px;
+    letter-spacing: 2px;
+  }
+
+  .who-we-are__inner {
+    gap: 30px;
+  }
+
+  .who-we-are__visual {
+    min-height: 340px;
+  }
+
+  .who-we-are__image--main {
+    inset: 22px 7% 14px 0;
+  }
+
+  .who-we-are__image--accent {
+    border-width: 5px;
+  }
+
+  .who-we-are__badge {
+    top: 0;
+    padding: 8px 11px 8px 9px;
+    gap: 8px;
+  }
+
+  .who-we-are__badge-mark {
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+  }
+
+  .who-we-are__badge strong {
+    font-size: 10px;
+  }
+
+  .who-we-are__badge small {
+    font-size: 8px;
+  }
+
+  .who-we-are__content h2 {
+    margin-bottom: 12px;
+    font-size: 36px;
+  }
+
+  .who-we-are__content p {
+    font-size: 13px;
+    line-height: 1.45;
+  }
+
+  .who-we-are__content .who-we-are__lead {
+    font-size: 15px;
+    line-height: 1.45;
+    margin-bottom: 8px;
+  }
+
+  .who-we-are__proofs {
+    gap: 8px;
+    margin: 16px 0 18px;
+    padding-top: 12px;
+  }
+
+  .who-we-are__proofs div {
+    gap: 6px;
+    padding: 9px 9px 10px;
+    border-radius: 11px;
+  }
+
+  .who-we-are__proofs strong {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    font-size: 13px;
+  }
+
+  .who-we-are__proofs span {
+    font-size: 12px;
+  }
+
+  .who-we-are__content .btn {
+    padding: 10px 16px;
+    font-size: 12px;
   }
 }
 
