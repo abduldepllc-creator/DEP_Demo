@@ -838,8 +838,8 @@ p {
 
 .hero-slider {
   position: relative;
-  height: calc(100vh + 96px);
-  min-height: calc(640px + 96px);
+  height: calc(100vh - 130px);
+  min-height: 640px;
   overflow: hidden;
   background: radial-gradient(ellipse at 75% 15%, #2a1c34 0%, #16121c 45%, #0e0d12 100%);
 }
@@ -1720,7 +1720,7 @@ p {
 /* Keep the final slide inside shorter laptop viewports. */
 @media (min-width: 961px) and (max-height: 900px) {
   .hero-slider {
-    min-height: calc(100vh + 96px);
+    min-height: calc(100vh - 130px);
   }
 
   .hero-slide {
