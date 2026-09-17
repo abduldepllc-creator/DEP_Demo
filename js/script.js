@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', function () {
         heroSlider.style.height = '';
         return;
       }
-      heroSlider.style.height = '100vh';
+      heroSlider.style.height = 'calc(100vh + 96px)';
     }
 
     setHeroSliderHeight();
