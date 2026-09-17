@@ -632,9 +632,9 @@ p {
 @media (min-width: 961px) {
   .dropdown {
     left: 50%;
-    width: min(900px, calc(100vw - 40px));
+    width: min(1100px, calc(100vw - 40px));
     min-width: 0;
-    grid-template-columns: repeat(8, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 3px;
     transform: translate(-50%, 10px) scale(0.97);
     transform-origin: top center;
@@ -648,6 +648,7 @@ p {
     padding: 10px 8px 10px 14px;
     font-size: 14.5px;
     line-height: 1.25;
+    white-space: nowrap;
   }
 }
 
