@@ -1719,7 +1719,7 @@ p {
 /* Keep the final slide inside shorter laptop viewports. */
 @media (min-width: 961px) and (max-height: 900px) {
   .hero-slider {
-    min-height: 0;
+    min-height: calc(100vh - 130px);
   }
 
   .hero-slide {
