@@ -454,6 +454,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var heroHijackEnabled = !prefersReducedMotion && window.matchMedia('(min-width: 961px)').matches;
 
+    function updateManualScrollState() {
+      document.body.classList.toggle('has-manual-scroll', window.scrollY > 12);
+    }
+
+    updateManualScrollState();
+    window.addEventListener('scroll', updateManualScrollState, { passive: true });
+
     if (heroHijackEnabled) {
       window.addEventListener('wheel', function (e) {
         if (window.scrollY >= 2) return; // hero no longer engaged, let normal page scroll happen
@@ -549,9 +556,15 @@ document.addEventListener('DOMContentLoaded', function () {
       if (heading.closest('.hero-slide, .footer')) return;
 
       heading.addEventListener('mouseenter', function () {
+        var headingColor = window.getComputedStyle(heading).color.match(/\d+/g);
+        var isLightHeading = headingColor && headingColor.length >= 3 && headingColor.slice(0, 3).every(function (value) {
+          return Number(value) >= 220;
+        });
+
         headingLens.classList.add('is-visible');
         heading.classList.add('heading-cursor-target');
-        heading.setAttribute('data-heading-text', heading.textContent.trim());
+        heading.classList.toggle('heading-cursor-target--light', isLightHeading);
+        heading.setAttribute('data-heading-text', heading.innerText.trim());
       });
 
       heading.addEventListener('mousemove', function (event) {
@@ -565,6 +578,7 @@ document.addEventListener('DOMContentLoaded', function () {
       heading.addEventListener('mouseleave', function () {
         headingLens.classList.remove('is-visible');
         heading.classList.remove('heading-cursor-target');
+        heading.classList.remove('heading-cursor-target--light');
       });
     });
 
