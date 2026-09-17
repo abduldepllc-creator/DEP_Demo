@@ -1720,58 +1720,49 @@ p {
 /* Keep the final slide inside shorter laptop viewports. */
 @media (min-width: 961px) and (max-height: 900px) {
   .hero-slider {
-    min-height: 640px;
+    min-height: 0;
   }
 
   .hero-slide {
-    padding: 12px 64px;
+    padding: 0 64px;
   }
 
-  .hero-slide__eyebrow {
+  .hero-slide__inner--stats .hero-slide__content {
+    max-height: 100%;
+  }
+
+  .hero-slide__inner--stats .hero-slide__eyebrow {
     margin-bottom: 12px;
-    font-size: 12px;
   }
 
   .hero-slide__inner--stats .hero-slide__title {
-    font-size: 48px;
-    margin-bottom: 14px;
+    margin-bottom: 12px;
   }
 
   .hero-slide__inner--stats .hero-slide__text {
-    font-size: 15px;
     line-height: 1.45;
-    margin-bottom: 18px;
+    margin-bottom: 16px;
   }
 
   .hero-process-grid {
     gap: 12px;
-    margin: 20px 0 24px;
+    margin: 18px 0 18px;
   }
 
   .hero-process-step {
-    padding: 17px 15px;
-    border-radius: 12px;
+    padding: 14px 12px;
   }
 
   .hero-process-step__num {
-    font-size: 18px;
     margin-bottom: 8px;
   }
 
   .hero-process-step h3 {
-    font-size: 15px;
-    line-height: 1.2;
     margin-bottom: 6px;
   }
 
   .hero-process-step p {
-    font-size: 12px;
     line-height: 1.45;
-  }
-
-  .hero-slide__inner--stats .btn--lg {
-    padding: 13px 26px;
-    font-size: 14px;
   }
 }
 
