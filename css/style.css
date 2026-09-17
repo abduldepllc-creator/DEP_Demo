@@ -1932,6 +1932,12 @@ p {
   border-bottom: 1px solid var(--color-border);
 }
 
+@media (min-width: 961px) {
+  #heroSlider:not(.is-complete) + .trust-strip {
+    display: none;
+  }
+}
+
 .trust-strip__inner {
   display: flex;
   align-items: center;

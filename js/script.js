@@ -441,6 +441,7 @@ document.addEventListener('DOMContentLoaded', function () {
       currentSlide = index;
       var activeSlide = slidesArr[currentSlide];
       activeSlide.classList.add('is-active');
+      heroSlider.classList.toggle('is-complete', currentSlide === totalSlides - 1);
       updateHeroChrome(currentSlide);
       if (!prefersReducedMotion) animateSlideStats(activeSlide);
       setTimeout(function () { isAnimating = false; }, 750);
