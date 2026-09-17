@@ -128,8 +128,7 @@ document.addEventListener('DOMContentLoaded', function () {
         heroSlider.style.height = '';
         return;
       }
-      var offset = topbar.offsetHeight + header.offsetHeight;
-      heroSlider.style.height = 'calc(100vh - ' + offset + 'px)';
+      heroSlider.style.height = '100vh';
     }
 
     setHeroSliderHeight();
