@@ -1740,6 +1740,57 @@ p {
   }
 }
 
+/* Fit the commitment section and both card rows on 1024px laptop viewports. */
+@media (min-width: 961px) and (max-width: 1100px) and (max-height: 700px) {
+  .commitment-section {
+    padding: 44px 0 50px;
+  }
+
+  .commitment-section__content .hero-slide__eyebrow {
+    margin-bottom: 8px;
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+
+  .commitment-section__content .hero-slide__title {
+    margin-bottom: 10px;
+    font-size: 40px;
+    line-height: 1.1;
+  }
+
+  .commitment-section__content .hero-slide__text {
+    max-width: 620px;
+    font-size: 14px;
+    line-height: 1.45;
+  }
+
+  .commitment-section__grid {
+    gap: 14px;
+    margin-top: 26px;
+  }
+
+  .commitment-section__card {
+    min-height: 150px;
+    padding: 18px 18px 16px;
+    border-radius: 14px;
+  }
+
+  .commitment-section__num {
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+
+  .commitment-section__card h3 {
+    margin-bottom: 6px;
+    font-size: 16px;
+  }
+
+  .commitment-section__card p {
+    font-size: 12.5px;
+    line-height: 1.4;
+  }
+}
+
 /* Keep the final slide inside shorter laptop viewports. */
 @media (min-width: 961px) and (max-height: 900px) {
   .hero-slider {
@@ -2698,6 +2749,33 @@ p {
 
   .trust-strip__logos>span {
     margin-right: 18px;
+  }
+
+  .trust-logo {
+    width: 100px;
+    height: 68px;
+    flex-basis: 100px;
+    padding: 4px;
+  }
+}
+
+/* Keep the certification strip slim on 1024px laptop viewports. */
+@media (min-width: 961px) and (max-width: 1100px) and (max-height: 700px) {
+  .trust-strip {
+    padding: 6px 0;
+  }
+
+  .trust-strip__inner {
+    padding: 0 28px;
+  }
+
+  .trust-strip__label {
+    font-size: 11px;
+    letter-spacing: 0.8px;
+  }
+
+  .trust-strip__logos>span {
+    margin-right: 22px;
   }
 
   .trust-logo {
@@ -5919,6 +5997,43 @@ p {
   }
 }
 
+/* Fit the client logo showcase and both card rows on 1024px laptop viewports. */
+@media (min-width: 961px) and (max-width: 1100px) and (max-height: 700px) {
+  .clients-showcase {
+    padding: 48px 0 42px;
+  }
+
+  .clients-showcase__inner {
+    gap: 18px;
+  }
+
+  .clients-showcase__header h2 {
+    font-size: 40px;
+    line-height: 1;
+  }
+
+  .clients-showcase__grid {
+    gap: 14px;
+  }
+
+  .client-showcase-card {
+    min-height: 130px;
+    padding: 12px 10px;
+    border-radius: 18px;
+  }
+
+  .client-showcase-card img {
+    max-width: 170px;
+    max-height: 105px;
+  }
+
+  .clients-showcase__note {
+    margin-top: 4px;
+    font-size: 0.9rem;
+    line-height: 1.45;
+  }
+}
+
 @media (max-width: 720px) {
   .clients-showcase {
     padding-top: 70px;
@@ -6798,6 +6913,577 @@ p {
   .why-us__stage,
   .why-us__panel-item {
     padding: 40px;
+  }
+}
+
+/* Keep the features block balanced on 1024px laptop viewports. */
+@media (min-width: 961px) and (max-width: 1100px) and (max-height: 700px) {
+  .features.section {
+    padding: 58px 0 64px;
+  }
+
+  .features__layout {
+    grid-template-columns: 0.86fr 1.14fr;
+    gap: 28px;
+  }
+
+  .features__intro h2 {
+    margin: 10px 0 12px;
+    font-size: 30px;
+  }
+
+  .features__intro p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+  .features__intro-stat {
+    gap: 12px;
+    margin-top: 24px;
+    padding-top: 18px;
+  }
+
+  .features__intro-stat-icon {
+    width: 46px;
+    height: 46px;
+    font-size: 16px;
+  }
+
+  .features__intro-stat-body strong {
+    font-size: 22px;
+  }
+
+  .features__list {
+    max-width: none;
+    gap: 14px;
+  }
+
+  .feature-row {
+    gap: 16px;
+    padding: 18px 18px 18px 20px;
+  }
+
+  .feature-row--offset {
+    margin-left: 24px;
+  }
+
+  .feature-row__icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 13px;
+    font-size: 17px;
+  }
+
+  .feature-row__body h3 {
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+
+  .feature-row__body p {
+    margin-bottom: 8px;
+    font-size: 12.5px;
+    line-height: 1.4;
+  }
+
+  .feature-row__ghost {
+    font-size: 58px;
+  }
+
+  .love-it.section {
+    padding: 48px 0 54px;
+  }
+
+  .love-it__inner {
+    gap: 28px;
+  }
+
+  .love-it__visual {
+    padding: 12px 24px 28px 0;
+  }
+
+  .love-it__photo img {
+    height: 320px;
+  }
+
+  .love-it__stamp {
+    width: 72px;
+    height: 72px;
+  }
+
+  .love-it__stamp span {
+    font-size: 9px;
+  }
+
+  .love-it__stamp strong {
+    font-size: 17px;
+  }
+
+  .love-it__float {
+    gap: 8px;
+    padding: 9px 12px;
+    border-radius: 12px;
+  }
+
+  .love-it__float--top {
+    top: 24px;
+    right: -4px;
+  }
+
+  .love-it__float--bottom {
+    bottom: 8px;
+    left: -18px;
+  }
+
+  .love-it__float-icon {
+    width: 34px;
+    height: 34px;
+    font-size: 13px;
+  }
+
+  .love-it__float-body strong {
+    font-size: 18px;
+  }
+
+  .love-it__float-body span {
+    font-size: 14px;
+  }
+
+  .love-it h2 {
+    margin-bottom: 10px;
+    font-size: 32px;
+  }
+
+  .love-it__content p {
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+  .love-it__highlight {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
+
+  .love-it .checklist {
+    gap: 7px;
+    margin-bottom: 18px;
+  }
+
+  .love-it .checklist li {
+    gap: 9px;
+    padding: 8px 12px;
+    border-radius: 11px;
+    font-size: 13px;
+  }
+
+  .checklist i {
+    width: 21px;
+    height: 21px;
+    font-size: 11px;
+  }
+
+  .love-it__mini-stats {
+    gap: 10px;
+    margin: 16px 0;
+  }
+
+  .love-it__mini-stat {
+    min-height: 64px;
+    gap: 8px;
+    padding: 10px;
+    border-radius: 12px;
+  }
+
+  .love-it__mini-stat i {
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+
+  .love-it__mini-stat .stat-box__num {
+    font-size: 30px;
+  }
+
+  .love-it__mini-stat .mini-stat-plus {
+    font-size: 16px;
+  }
+
+  .love-it__mini-stat span {
+    font-size: 11px;
+  }
+}
+
+/* Keep Why Choose Us compact on 1024px laptop viewports. */
+@media (min-width: 961px) and (max-width: 1100px) and (max-height: 700px) {
+  #whyChooseUs.section {
+    padding: 48px 0 52px;
+  }
+
+  #whyChooseUs .section__head {
+    margin-bottom: 26px;
+  }
+
+  #whyChooseUs .section__head h2 {
+    margin-bottom: 10px;
+    font-size: 32px;
+  }
+
+  #whyChooseUs .section__head p {
+    font-size: 14px;
+    line-height: 1.45;
+  }
+
+  #whyChooseUs .why-us__panel {
+    grid-template-columns: 0.88fr 1.12fr;
+    margin-bottom: 24px;
+  }
+
+  #whyChooseUs .why-us__tab {
+    gap: 12px;
+    padding: 14px 20px;
+    flex: 1;
+  }
+
+  #whyChooseUs .why-us__tab-num {
+    font-size: 18px;
+  }
+
+  #whyChooseUs .why-us__tab-label {
+    gap: 1px;
+  }
+
+  #whyChooseUs .why-us__tab-label strong {
+    font-size: 14px;
+  }
+
+  #whyChooseUs .why-us__tab-label span {
+    font-size: 11px;
+  }
+
+  #whyChooseUs .why-us__tab-icon {
+    font-size: 14px;
+  }
+
+  #whyChooseUs .why-us__panel-item {
+    padding: 28px 38px;
+  }
+
+  #whyChooseUs .why-us__panel-num {
+    top: 14px;
+    right: 24px;
+    font-size: 88px;
+  }
+
+  #whyChooseUs .why-us__panel-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 15px;
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  #whyChooseUs .why-us__panel-item h3 {
+    margin-bottom: 8px;
+    font-size: 22px;
+  }
+
+  #whyChooseUs .why-us__panel-item p {
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+  #whyChooseUs .pill-list {
+    gap: 10px;
+  }
+
+  #whyChooseUs .pill-list span {
+    gap: 6px;
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+}
+
+/* Fit the results snapshot and both card rows on 1024px laptop viewports. */
+@media (min-width: 961px) and (max-width: 1100px) and (max-height: 700px) {
+  .stat-banner {
+    padding: 54px 0 58px;
+  }
+
+  .stat-banner__head {
+    margin-bottom: 28px;
+  }
+
+  .stat-banner__head h2 {
+    margin-top: 8px;
+    font-size: 32px;
+  }
+
+  .stat-banner__grid {
+    gap: 14px;
+    row-gap: 14px;
+  }
+
+  .stat-banner__item {
+    min-height: 150px;
+    padding: 18px 14px 16px;
+    border-radius: 18px;
+  }
+
+  .stat-banner__icon {
+    width: 46px;
+    height: 46px;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  .stat-banner__num {
+    font-size: 42px;
+  }
+
+  .stat-banner__plus {
+    font-size: 20px;
+  }
+
+  .stat-banner__label {
+    max-width: 160px;
+    margin-top: 8px;
+    font-size: 10px;
+    line-height: 1.3;
+  }
+}
+
+/* Keep the success section balanced on 1024px laptop viewports. */
+@media (min-width: 961px) and (max-width: 1100px) and (max-height: 700px) {
+  .success.section {
+    padding: 54px 0 60px;
+  }
+
+  .success__grid {
+    grid-template-columns: 0.82fr 1.18fr;
+    gap: 28px;
+  }
+
+  .success__card {
+    padding: 30px 24px 42px;
+  }
+
+  .success__card h3 {
+    font-size: 22px;
+    line-height: 1.25;
+  }
+
+  .success__points {
+    margin-top: -18px;
+    padding: 26px 22px 6px;
+  }
+
+  .success__point {
+    gap: 14px;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+  }
+
+  .success__points .success__point:last-child {
+    padding-bottom: 20px;
+  }
+
+  .success__point-icon {
+    width: 44px;
+    height: 44px;
+    font-size: 17px;
+  }
+
+  .success__point-body h4 {
+    font-size: 13.5px;
+    margin-bottom: 2px;
+  }
+
+  .success__point-body span {
+    font-size: 10.5px;
+  }
+
+  .success__content {
+    padding-top: 0;
+  }
+
+  .success__content h2 {
+    margin: 10px 0 12px;
+    font-size: 30px;
+  }
+
+  .success__content>p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .success__media {
+    gap: 18px;
+  }
+
+  .success__media-frame img {
+    height: 210px;
+  }
+
+  .success__media-badge {
+    right: -12px;
+    bottom: -14px;
+    gap: 8px;
+    padding: 10px 12px;
+    border-radius: 11px;
+  }
+
+  .success__media-badge i {
+    font-size: 16px;
+  }
+
+  .success__media-badge strong {
+    font-size: 15px;
+  }
+
+  .success__media-badge span {
+    font-size: 9px;
+  }
+
+  .success__checklist {
+    gap: 10px;
+  }
+
+  .success__checklist li {
+    min-height: 78px;
+    gap: 9px;
+    padding: 12px 10px;
+    border-radius: 14px;
+    font-size: 11.5px;
+  }
+
+  .success__checklist li:nth-child(even) {
+    transform: translateY(8px);
+  }
+
+  .success__checklist i {
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+    font-size: 11px;
+  }
+}
+
+/* Fit the trusted partner and FAQ section on 1024px laptop viewports. */
+@media (min-width: 961px) and (max-width: 1100px) and (max-height: 700px) {
+  .faq.section {
+    padding: 48px 0 54px;
+  }
+
+  .faq__layout {
+    gap: 28px;
+  }
+
+  .faq__intro-tag {
+    margin-bottom: 10px;
+    padding: 6px 14px;
+    font-size: 10.5px;
+  }
+
+  .faq__intro-head {
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  .faq__intro-head h2 {
+    font-size: 28px;
+  }
+
+  .faq__intro-photo {
+    padding: 12px 16px 16px 0;
+  }
+
+  .faq__intro-photo::before {
+    top: 12px;
+    left: 16px;
+  }
+
+  .faq__intro-photo-frame img {
+    height: 150px;
+  }
+
+  .faq__intro-photo-badge {
+    left: -10px;
+    padding: 8px 10px;
+    border-radius: 10px;
+  }
+
+  .faq__intro-photo-badge span {
+    font-size: 9.5px;
+  }
+
+  .faq__intro>p {
+    margin-bottom: 18px;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .faq__skills {
+    gap: 6px;
+  }
+
+  .faq__skill {
+    gap: 8px;
+  }
+
+  .faq__skill-ring-wrap {
+    width: 76px;
+    height: 76px;
+    padding: 4px;
+  }
+
+  .faq__skill-ring-wrap::after {
+    top: 7px;
+    left: 14px;
+    width: 22px;
+    height: 9px;
+  }
+
+  .faq__skill-value {
+    font-size: 15px;
+  }
+
+  .faq__skill-label {
+    font-size: 9.5px;
+  }
+
+  .faq__accordion-col {
+    padding-top: 4px;
+  }
+
+  .faq__accordion-col>.eyebrow {
+    margin-bottom: 10px;
+    font-size: 11px;
+  }
+
+  .faq__accordion-col .accordion__item {
+    margin-bottom: 10px;
+  }
+
+  .faq__accordion-col .accordion__item:nth-child(odd) {
+    margin-right: 14px;
+  }
+
+  .faq__accordion-col .accordion__item:nth-child(even) {
+    margin-left: 14px;
+  }
+
+  .faq__accordion-col .accordion__trigger {
+    padding: 13px 16px;
+    font-size: 13.5px;
+  }
+
+  .faq__accordion-col .accordion__panel p {
+    padding: 0 16px 14px;
+    font-size: 12.5px;
+    line-height: 1.45;
   }
 }
 
