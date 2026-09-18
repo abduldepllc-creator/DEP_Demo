@@ -9510,6 +9510,28 @@ p {
   }
 }
 
+/* Keep Who We Are clean on large desktop screens such as 1669x950. */
+@media (min-width: 1501px) {
+  .who-we-are__content h2 {
+    font-size: 46px;
+    line-height: 1.08;
+    white-space: nowrap;
+  }
+
+  .who-we-are__visual {
+    min-height: 540px;
+  }
+
+  .who-we-are__image--main {
+    inset: 28px 5% 14px 0;
+  }
+
+  .who-we-are__image--accent {
+    width: 48%;
+    height: 44%;
+  }
+}
+
 /* ============================================
    DARK THEME
    Sections that are already dark by design (hero slider, footer,
