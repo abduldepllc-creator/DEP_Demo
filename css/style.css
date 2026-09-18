@@ -3342,7 +3342,9 @@ p {
 
   .who-we-are__content h2 {
     margin-bottom: 12px;
-    font-size: 36px;
+    font-size: 32px;
+    line-height: 1.08;
+    white-space: nowrap;
   }
 
   .who-we-are__content p {
@@ -3438,7 +3440,9 @@ p {
 
   .who-we-are__content h2 {
     margin-bottom: 14px;
-    font-size: 44px;
+    font-size: 38px;
+    line-height: 1.08;
+    white-space: nowrap;
   }
 
   .who-we-are__content p {
@@ -3481,34 +3485,102 @@ p {
   }
 }
 
-/* Keep Who We Are balanced at 1450x650 laptop viewport sizes. */
-@media (min-width: 1401px) and (max-width: 1500px) and (max-height: 700px) {
+/* Keep Who We Are heading single-line per phrase at 1200x650. */
+@media (min-width: 1101px) and (max-width: 1200px) and (max-height: 700px) {
   .who-we-are {
-    padding: 34px 0 42px;
+    padding: 26px 0 34px;
   }
 
   .who-we-are__heading {
-    margin-bottom: 20px;
+    margin-bottom: 14px;
   }
 
   .who-we-are__heading .eyebrow {
-    font-size: 35px;
+    font-size: 30px;
+  }
+
+  .who-we-are__inner {
+    gap: 34px;
+  }
+
+  .who-we-are__visual {
+    min-height: 360px;
+  }
+
+  .who-we-are__image--main {
+    inset: 22px 6% 14px 0;
+  }
+
+  .who-we-are__content h2 {
+    margin-bottom: 11px;
+    font-size: 34px;
+    line-height: 1.08;
+    white-space: nowrap;
+  }
+
+  .who-we-are__content p {
+    font-size: 13px;
+    line-height: 1.45;
+  }
+
+  .who-we-are__content .who-we-are__lead {
+    font-size: 15px;
+    line-height: 1.45;
+    margin-bottom: 8px;
+  }
+
+  .who-we-are__proofs {
+    gap: 8px;
+    margin: 14px 0 16px;
+    padding-top: 11px;
+  }
+
+  .who-we-are__proofs div {
+    gap: 6px;
+    padding: 9px;
+  }
+
+  .who-we-are__proofs strong {
+    width: 30px;
+    height: 30px;
+    font-size: 13px;
+  }
+
+  .who-we-are__proofs span {
+    font-size: 12px;
+  }
+}
+
+/* Keep Who We Are balanced at 1450x650 laptop viewport sizes. */
+@media (min-width: 1401px) and (max-width: 1500px) and (max-height: 700px) {
+  .who-we-are {
+    padding: 20px 0 28px;
+  }
+
+  .who-we-are__heading {
+    margin-bottom: 10px;
+  }
+
+  .who-we-are__heading .eyebrow {
+    font-size: 32px;
     letter-spacing: 2.6px;
   }
 
   .who-we-are__inner {
-    gap: 48px;
+    gap: 40px;
   }
 
   .who-we-are__visual {
-    min-height: 420px;
+    min-height: 460px;
   }
 
   .who-we-are__image--main {
-    inset: 26px 7% 18px 0;
+    inset: 24px 5% 12px 0;
   }
 
   .who-we-are__image--accent {
+    width: 48%;
+    height: 44%;
     border-width: 7px;
   }
 
@@ -3533,47 +3605,49 @@ p {
   }
 
   .who-we-are__content h2 {
-    margin-bottom: 16px;
-    font-size: 48px;
+    margin-bottom: 12px;
+    font-size: 40px;
+    line-height: 1.08;
+    white-space: nowrap;
   }
 
   .who-we-are__content p {
-    font-size: 14.5px;
-    line-height: 1.55;
+    font-size: 13.5px;
+    line-height: 1.45;
   }
 
   .who-we-are__content .who-we-are__lead {
-    font-size: 16.5px;
-    line-height: 1.55;
-    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 1.45;
+    margin-bottom: 8px;
   }
 
   .who-we-are__proofs {
-    gap: 11px;
-    margin: 20px 0 22px;
-    padding-top: 16px;
+    gap: 9px;
+    margin: 14px 0 16px;
+    padding-top: 12px;
   }
 
   .who-we-are__proofs div {
-    gap: 8px;
-    padding: 12px 11px 13px;
-    border-radius: 13px;
+    gap: 6px;
+    padding: 9px 10px 10px;
+    border-radius: 11px;
   }
 
   .who-we-are__proofs strong {
-    width: 34px;
-    height: 34px;
-    border-radius: 9px;
-    font-size: 14px;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    font-size: 13px;
   }
 
   .who-we-are__proofs span {
-    font-size: 13.5px;
+    font-size: 12px;
   }
 
   .who-we-are__content .btn {
-    padding: 11px 18px;
-    font-size: 13px;
+    padding: 9px 16px;
+    font-size: 12px;
   }
 }
 
@@ -9379,6 +9453,60 @@ p {
     padding: 0 18px 16px;
     font-size: 13px;
     line-height: 1.5;
+  }
+}
+
+/* Desktop fallback: keep Who We Are fitted even when browser height exceeds 700px. */
+@media (min-width: 961px) and (max-width: 1100px) {
+  .who-we-are__inner {
+    min-width: 0;
+  }
+
+  .who-we-are__content {
+    min-width: 0;
+  }
+
+  .who-we-are__visual {
+    min-height: 400px;
+  }
+
+  .who-we-are__content h2 {
+    font-size: 28px;
+    line-height: 1.08;
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: 1101px) and (max-width: 1300px) {
+  .who-we-are__visual {
+    min-height: 430px;
+  }
+
+  .who-we-are__content h2 {
+    font-size: 36px;
+    line-height: 1.08;
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: 1301px) and (max-width: 1500px) {
+  .who-we-are__visual {
+    min-height: 460px;
+  }
+
+  .who-we-are__image--main {
+    inset: 24px 5% 12px 0;
+  }
+
+  .who-we-are__image--accent {
+    width: 48%;
+    height: 44%;
+  }
+
+  .who-we-are__content h2 {
+    font-size: 40px;
+    line-height: 1.08;
+    white-space: nowrap;
   }
 }
 
