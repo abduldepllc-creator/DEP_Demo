@@ -8653,8 +8653,9 @@ p {
 
   .success__media-badge {
     position: static;
-    margin-top: -30px;
-    margin-left: 20px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: 10px;
     width: fit-content;
   }
 
