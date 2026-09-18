@@ -602,4 +602,23 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  /* ---------- Inline client story playback ---------- */
+  document.querySelectorAll('.client-story-card__preview').forEach(function (preview) {
+    preview.addEventListener('click', function () {
+      var card = preview.closest('.client-story-card');
+      var videoId = preview.getAttribute('data-video-id');
+      if (!card || !videoId || card.classList.contains('is-playing')) return;
+
+      var frame = document.createElement('iframe');
+      frame.src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(videoId) + '?autoplay=1&playsinline=1&rel=0';
+      frame.title = preview.getAttribute('aria-label') || 'Client story video';
+      frame.setAttribute('allow', 'autoplay; encrypted-media; picture-in-picture; fullscreen');
+      frame.setAttribute('allowfullscreen', '');
+      frame.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');
+
+      preview.replaceWith(frame);
+      card.classList.add('is-playing');
+    });
+  });
+
 });
