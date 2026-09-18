@@ -149,7 +149,10 @@ p {
   inset: 0;
   z-index: 1;
   color: #ffffff;
+  font: inherit;
+  line-height: inherit;
   white-space: pre-line;
+  overflow: hidden;
   pointer-events: none;
   clip-path: circle(48px at var(--heading-lens-x) var(--heading-lens-y));
 }
@@ -3025,6 +3028,7 @@ p {
 .who-we-are {
   position: relative;
   overflow: hidden;
+  scroll-margin-top: 90px;
   padding: 112px 0 118px;
   background: linear-gradient(135deg, #fff 0%, #fff8fb 54%, #f7f5f8 100%);
 }
@@ -3342,9 +3346,8 @@ p {
 
   .who-we-are__content h2 {
     margin-bottom: 12px;
-    font-size: 32px;
+    font-size: 28px;
     line-height: 1.08;
-    white-space: nowrap;
   }
 
   .who-we-are__content p {
@@ -3440,9 +3443,8 @@ p {
 
   .who-we-are__content h2 {
     margin-bottom: 14px;
-    font-size: 38px;
+    font-size: 32px;
     line-height: 1.08;
-    white-space: nowrap;
   }
 
   .who-we-are__content p {
@@ -3513,9 +3515,8 @@ p {
 
   .who-we-are__content h2 {
     margin-bottom: 11px;
-    font-size: 34px;
+    font-size: 28px;
     line-height: 1.08;
-    white-space: nowrap;
   }
 
   .who-we-are__content p {
@@ -3606,9 +3607,8 @@ p {
 
   .who-we-are__content h2 {
     margin-bottom: 12px;
-    font-size: 40px;
+    font-size: 34px;
     line-height: 1.08;
-    white-space: nowrap;
   }
 
   .who-we-are__content p {
@@ -9471,9 +9471,9 @@ p {
   }
 
   .who-we-are__content h2 {
-    font-size: 28px;
+    font-size: 26px !important;
     line-height: 1.08;
-    white-space: nowrap;
+    white-space: nowrap !important;
   }
 }
 
@@ -9483,9 +9483,9 @@ p {
   }
 
   .who-we-are__content h2 {
-    font-size: 36px;
+    font-size: 30px !important;
     line-height: 1.08;
-    white-space: nowrap;
+    white-space: nowrap !important;
   }
 }
 
@@ -9504,9 +9504,9 @@ p {
   }
 
   .who-we-are__content h2 {
-    font-size: 40px;
+    font-size: 34px !important;
     line-height: 1.08;
-    white-space: nowrap;
+    white-space: nowrap !important;
   }
 }
 
